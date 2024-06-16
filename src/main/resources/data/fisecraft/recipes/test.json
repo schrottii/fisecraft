@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:dirt"
+    },
+    "/": {
+      "tag": "minecraft:oak_planks"
+    }
+  },
+  "result": {
+    "item": "minecraft:apple"
+  }
+}
