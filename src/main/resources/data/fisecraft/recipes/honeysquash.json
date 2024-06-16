@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PH ",
+    "HR ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:potato"
+    },
+    "H": {
+      "item": "minecraft:honeycomb"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "fisecraft:honeysquash",
+    "count": 1
+  }
+}
