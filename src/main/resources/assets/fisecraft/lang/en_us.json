@@ -9,5 +9,8 @@
 
   "block.fisecraft.shadowflower": "Shadowflower",
   "block.fisecraft.lightflower": "Lightflower",
-  "block.fisecraft.roots": "Roots"
+  "block.fisecraft.roots": "Roots",
+  "block.fisecraft.block_of_roots": "Block of Roots",
+  "block.fisecraft.chiseled_block_of_roots": "Chiseled Block of Roots",
+  "block.fisecraft.shiny_block_of_roots": "Shiny Block of Roots"
 }

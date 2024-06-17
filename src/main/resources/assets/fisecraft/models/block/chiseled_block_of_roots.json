@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "fisecraft:block/chiseled_block_of_roots"
+  }
+}

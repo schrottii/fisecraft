@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "fisecraft:roots"
+    "fisecraft:roots",
+    "fisecraft:block_of_roots",
+    "fisecraft:chiseled_block_of_roots",
+    "fisecraft:shiny_block_of_roots"
   ]
 }

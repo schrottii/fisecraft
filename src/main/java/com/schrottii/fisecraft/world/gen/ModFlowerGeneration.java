@@ -37,6 +37,8 @@ public class ModFlowerGeneration {
                     event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
 
             base.add(ModPlacedFeatures.ROOTS_PLACED);
+
+            base.add(ModPlacedFeatures.BLOCK_OF_ROOTS_PLACED);
         }
     }
 }

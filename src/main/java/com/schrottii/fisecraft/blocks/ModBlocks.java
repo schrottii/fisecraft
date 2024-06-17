@@ -44,6 +44,17 @@ public class ModBlocks {
     public static final RegistryObject<Block> ROOTS = BLOCKS.register("roots",
             () -> new GrassBlock(Block.Properties.of(Material.STONE).strength(0.8f, 1f).speedFactor(0.2f).noCollission()));
 
+    public static final RegistryObject<Block> BLOCK_OF_ROOTS = BLOCKS.register("block_of_roots",
+            () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CHISELED_BLOCK_OF_ROOTS = BLOCKS.register("chiseled_block_of_roots",
+            () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SHINY_BLOCK_OF_ROOTS = BLOCKS.register("shiny_block_of_roots",
+            () -> new Block(Block.Properties.of(Material.STONE).strength(1.5f, 1200f).requiresCorrectToolForDrops().lightLevel((state) -> 9)));
+
+
+
+
+
     @SubscribeEvent
     public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
