@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "fisecraft:block/roots"
+  },
+  "render-type": "cutout"
+}

@@ -1,3 +1,13 @@
 {
-  "item.fisecraft.honeysquash": "Honey Squash"
+  "itemGroup.fisecraft": "Fisecraft Content",
+
+  "item.fisecraft.honeysquash": "Honey Squash",
+  "item.fisecraft.enderfruit": "Enderfruit",
+  "item.fisecraft.root": "Root",
+  "item.fisecraft.escapelevator": "Escapelevator",
+  "item.fisecraft.digelevator": "Digelevator",
+
+  "block.fisecraft.shadowflower": "Shadowflower",
+  "block.fisecraft.lightflower": "Lightflower",
+  "block.fisecraft.roots": "Roots"
 }

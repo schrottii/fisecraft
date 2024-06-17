@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fisecraft:roots"
+    }
+  ],
+  "result": {
+    "item": "fisecraft:root",
+    "count": 2
+  }
+}

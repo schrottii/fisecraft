@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fisecraft:escapelevator"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "fisecraft:shadowflower"
+    }
+  ],
+  "result": {
+    "item": "fisecraft:digelevator",
+    "count": 1
+  }
+}

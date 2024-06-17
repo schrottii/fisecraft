@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "SIS",
+    "ADA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stone_pickaxe"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "fisecraft:shadowflower"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "fisecraft:digelevator",
+    "count": 1
+  }
+}

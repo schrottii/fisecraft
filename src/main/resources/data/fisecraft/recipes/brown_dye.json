@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fisecraft:root"
+    }
+  ],
+  "result": {
+    "item": "minecraft:brown_dye",
+    "count": 2
+  }
+}

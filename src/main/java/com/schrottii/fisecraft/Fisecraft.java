@@ -1,7 +1,12 @@
 package com.schrottii.fisecraft;
 
 import com.schrottii.fisecraft.items.ModItems;
+import com.schrottii.fisecraft.blocks.ModBlocks;
 import com.mojang.logging.LogUtils;
+import com.schrottii.fisecraft.world.feature.ModConfiguredFeatures;
+import com.schrottii.fisecraft.world.feature.ModPlacedFeatures;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -10,6 +15,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
@@ -23,6 +29,7 @@ import java.util.stream.Collectors;
 @Mod("fisecraft")
 public class Fisecraft
 {
+
     // Directly reference a slf4j logger
     public static final String MODID = "fisecraft";
     private static final Logger LOGGER = LogUtils.getLogger();
@@ -35,14 +42,22 @@ public class Fisecraft
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         // Register the processIMC method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
 
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::setup);
 
         ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    private void clientSetup (final FMLClientSetupEvent event) {
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SHADOWFLOWER.get(), RenderType.cutout()); // Replace ModBlocks.INFUSER_BLOCK.get() with your block
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHTFLOWER.get(), RenderType.cutout()); // Replace ModBlocks.INFUSER_BLOCK.get() with your block
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ROOTS.get(), RenderType.cutout()); // Replace ModBlocks.INFUSER_BLOCK.get() with your block
     }
 
     private void setup(final FMLCommonSetupEvent event)
