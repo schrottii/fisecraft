@@ -20,7 +20,7 @@ public class ModPlacedFeatures {
 
     public static final Holder<PlacedFeature> BLOCK_OF_ROOTS_PLACED = PlacementUtils.register("block_of_roots",
             ModConfiguredFeatures.BLOCK_OF_ROOTS, RarityFilter.onAverageOnceEvery(2),
-            InSquarePlacement.spread(), PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT, BiomeFilter.biome());
+            InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, BiomeFilter.biome());
 
 
 }

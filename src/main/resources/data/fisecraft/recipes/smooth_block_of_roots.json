@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "fisecraft:block_of_roots"
+  },
+  "result": "fisecraft:smooth_block_of_roots",
+  "experience": 0.1,
+  "cookingtime": 50
+}

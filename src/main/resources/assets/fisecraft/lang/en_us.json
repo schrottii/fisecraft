@@ -12,5 +12,9 @@
   "block.fisecraft.roots": "Roots",
   "block.fisecraft.block_of_roots": "Block of Roots",
   "block.fisecraft.chiseled_block_of_roots": "Chiseled Block of Roots",
-  "block.fisecraft.shiny_block_of_roots": "Shiny Block of Roots"
+  "block.fisecraft.shiny_block_of_roots": "Shiny Block of Roots",
+  "block.fisecraft.rough_block_of_roots": "Rough Block of Roots",
+  "block.fisecraft.smooth_block_of_roots": "Smooth Block of Roots",
+  "block.fisecraft.layered_block_of_iron": "Layered Block of Iron",
+  "block.fisecraft.airplane_block": "Airplane Block"
 }

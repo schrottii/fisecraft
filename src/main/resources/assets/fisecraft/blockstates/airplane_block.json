@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "fisecraft:block/airplane_block",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "fisecraft:block/airplane_block"
+    },
+    "facing=south": {
+      "model": "fisecraft:block/airplane_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fisecraft:block/airplane_block",
+      "y": 270
+    }
+  }
+}

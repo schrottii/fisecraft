@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "fisecraft:block/layered_block_of_iron",
+    "front": "fisecraft:block/airplane_block",
+    "side": "fisecraft:block/layered_block_of_iron"
+  }
+}

@@ -50,7 +50,16 @@ public class ModBlocks {
             () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SHINY_BLOCK_OF_ROOTS = BLOCKS.register("shiny_block_of_roots",
             () -> new Block(Block.Properties.of(Material.STONE).strength(1.5f, 1200f).requiresCorrectToolForDrops().lightLevel((state) -> 9)));
+    public static final RegistryObject<Block> ROUGH_BLOCK_OF_ROOTS = BLOCKS.register("rough_block_of_roots",
+            () -> new Block(Block.Properties.of(Material.STONE).strength(4f, 1200f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SMOOTH_BLOCK_OF_ROOTS = BLOCKS.register("smooth_block_of_roots",
+            () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> LAYERED_BLOCK_OF_IRON = BLOCKS.register("layered_block_of_iron",
+            () -> new Block(Block.Properties.of(Material.STONE).strength(10f, 1200f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> AIRPLANE_BLOCK = BLOCKS.register("airplane_block",
+            () -> new AirplaneBlock(Block.Properties.of(Material.STONE).strength(10f, 1200f).requiresCorrectToolForDrops()));
 
 
 

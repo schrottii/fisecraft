@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LEL",
+    "LNL",
+    "LRL"
+  ],
+  "key": {
+    "L": {
+      "item": "fisecraft:layered_block_of_iron"
+    },
+    "E": {
+      "item": "minecraft:elytra"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "R": {
+      "item": "fisecraft:root"
+    }
+  },
+  "result": {
+    "item": "fisecraft:airplane_block",
+    "count": 1
+  }
+}
