@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_savanna",
+  "features": "fisecraft:aloee",
+  "step": "vegetal_decoration"
+}

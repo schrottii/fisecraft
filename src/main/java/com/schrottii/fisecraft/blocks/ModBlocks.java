@@ -56,10 +56,16 @@ public class ModBlocks {
             () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> LAYERED_BLOCK_OF_IRON = BLOCKS.register("layered_block_of_iron",
-            () -> new Block(Block.Properties.of(Material.STONE).strength(10f, 1200f).requiresCorrectToolForDrops()));
+            () -> new Block(Block.Properties.of(Material.STONE).strength(8f, 1200f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> AIRPLANE_BLOCK = BLOCKS.register("airplane_block",
-            () -> new AirplaneBlock(Block.Properties.of(Material.STONE).strength(10f, 1200f).requiresCorrectToolForDrops()));
+            () -> new AirplaneBlock(Block.Properties.of(Material.STONE).strength(8f, 1200f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ALOEE = BLOCKS.register("aloee",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 60,  Block.Properties.of(Material.PLANT).strength(0.05f, 1f).noCollission()));
+
+    public static final RegistryObject<Block> LUCKY_COLOR_BLOCK = BLOCKS.register("lucky_color_block",
+            () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f)));
 
 
 

@@ -43,6 +43,16 @@ public class ModItems {
     public static final RegistryObject<Item> DIGELEVATOR = ITEMS.register("digelevator",
             () -> new ElevatorItem2(new Item.Properties().tab(ModCreativeTab.fisecraft).stacksTo(1)));
 
+    public static final RegistryObject<Item> ALOEE_VERA = ITEMS.register("aloee_vera",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)
+                    .food(new FoodProperties.Builder().nutrition(2).saturationMod(0)
+                            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 90, 1), 1.0F).build())));
+
+    public static final RegistryObject<Item> BANDAGE = ITEMS.register("bandage",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)
+                    .food(new FoodProperties.Builder().nutrition(0).saturationMod(0)
+                            .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 0), 1.0F).build())));
+
 
 
 

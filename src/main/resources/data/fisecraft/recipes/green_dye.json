@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fisecraft:aloee_vera"
+    }
+  ],
+  "result": {
+    "item": "minecraft:green_dye",
+    "count": 2
+  }
+}

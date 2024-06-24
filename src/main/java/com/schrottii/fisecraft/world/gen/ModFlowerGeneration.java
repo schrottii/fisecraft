@@ -39,6 +39,21 @@ public class ModFlowerGeneration {
             base.add(ModPlacedFeatures.ROOTS_PLACED);
 
             base.add(ModPlacedFeatures.BLOCK_OF_ROOTS_PLACED);
+            base.add(ModPlacedFeatures.BLOCK_OF_ROOTS_PLACED2);
+        }
+
+        if(types.contains(BiomeDictionary.Type.SAVANNA)) {
+            List<Holder<PlacedFeature>> base =
+                    event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+
+            base.add(ModPlacedFeatures.ALOEE_PLACED);
+        }
+
+        if(types.contains(BiomeDictionary.Type.PLAINS)) {
+            List<Holder<PlacedFeature>> base =
+                    event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+
+            base.add(ModPlacedFeatures.LUCKY_COLOR_BLOCK_PLACED);
         }
     }
 }

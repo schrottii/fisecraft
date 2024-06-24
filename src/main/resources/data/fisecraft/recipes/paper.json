@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fisecraft:root"
+    },
+    {
+      "item": "fisecraft:root"
+    }
+  ],
+  "result": {
+    "item": "minecraft:paper",
+    "count": 4
+  }
+}

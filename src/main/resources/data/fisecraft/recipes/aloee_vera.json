@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fisecraft:aloee"
+    }
+  ],
+  "result": {
+    "item": "fisecraft:aloee_vera",
+    "count": 2
+  }
+}

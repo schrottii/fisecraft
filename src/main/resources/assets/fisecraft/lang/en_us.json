@@ -6,6 +6,8 @@
   "item.fisecraft.root": "Root",
   "item.fisecraft.escapelevator": "Escapelevator",
   "item.fisecraft.digelevator": "Digelevator",
+  "item.fisecraft.aloee_vera": "Aloee Vera",
+  "item.fisecraft.bandage": "Bandage",
 
   "block.fisecraft.shadowflower": "Shadowflower",
   "block.fisecraft.lightflower": "Lightflower",
@@ -16,5 +18,10 @@
   "block.fisecraft.rough_block_of_roots": "Rough Block of Roots",
   "block.fisecraft.smooth_block_of_roots": "Smooth Block of Roots",
   "block.fisecraft.layered_block_of_iron": "Layered Block of Iron",
-  "block.fisecraft.airplane_block": "Airplane Block"
+  "block.fisecraft.airplane_block": "Airplane Block",
+  "block.fisecraft.aloee": "Aloee",
+  "block.fisecraft.lucky_color_block": "Lucky Color Block",
+
+  "enchantment.fisecraft.elmending": "Elmending",
+  "enchantment.fisecraft.curseroot": "Curse of the Root"
 }
