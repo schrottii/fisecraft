@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fisecraft:block/smooth_root_slab"
+    },
+    "type=double": {
+      "model": "fisecraft:block/smooth_block_of_roots"
+    },
+    "type=top": {
+      "model": "fisecraft:block/smooth_root_slab_top"
+    }
+  }
+}

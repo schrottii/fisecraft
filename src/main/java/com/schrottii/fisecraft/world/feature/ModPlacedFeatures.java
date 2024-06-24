@@ -30,10 +30,10 @@ public class ModPlacedFeatures {
     public static final Holder<PlacedFeature> ALOEE_PLACED = PlacementUtils.register("aloee",
             ModConfiguredFeatures.ALOEE, RarityFilter.onAverageOnceEvery(32),
             InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
-
+/*
     public static final Holder<PlacedFeature> LUCKY_COLOR_BLOCK_PLACED = PlacementUtils.register("lucky_color_block",
             ModConfiguredFeatures.LUCKY_COLOR_BLOCK, RarityFilter.onAverageOnceEvery(32),
             InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, BiomeFilter.biome());
-
+*/
 
 }

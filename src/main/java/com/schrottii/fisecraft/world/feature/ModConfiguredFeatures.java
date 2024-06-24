@@ -47,9 +47,9 @@ public class ModConfiguredFeatures {
             FeatureUtils.register("aloee", Feature.FLOWER,
                     new RandomPatchConfiguration(16, 6, 3, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                             new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ALOEE.get())))));
-
+/*
     public static final Holder<ConfiguredFeature<SimpleBlockConfiguration, ?>> LUCKY_COLOR_BLOCK =
             FeatureUtils.register("lucky_color_block", Feature.SIMPLE_BLOCK,
                     new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LUCKY_COLOR_BLOCK.get())));
-
+*/
 }

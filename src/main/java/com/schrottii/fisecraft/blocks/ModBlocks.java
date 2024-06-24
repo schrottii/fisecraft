@@ -37,7 +37,6 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SHADOWFLOWER = BLOCKS.register("shadowflower",
             () -> new FlowerBlock(MobEffects.BLINDNESS, 120,  Block.Properties.of(Material.PLANT).strength(0.5f, 1f).speedFactor(0.6f).noCollission()));
-
     public static final RegistryObject<Block> LIGHTFLOWER = BLOCKS.register("lightflower",
             () -> new FlowerBlock(MobEffects.NIGHT_VISION, 120,  Block.Properties.of(Material.PLANT).strength(0.2f, 1f).lightLevel((state) -> 6).speedFactor(1.2f).noCollission()));
 
@@ -55,18 +54,37 @@ public class ModBlocks {
     public static final RegistryObject<Block> SMOOTH_BLOCK_OF_ROOTS = BLOCKS.register("smooth_block_of_roots",
             () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> ROOT_STAIRS = BLOCKS.register("root_stairs",
+            () -> new StairBlock(() -> ModBlocks.BLOCK_OF_ROOTS.get().defaultBlockState(), Block.Properties.of(Material.STONE)
+                    .strength(2f, 1200f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROOT_SLAB = BLOCKS.register("root_slab",
+            () -> new SlabBlock(Block.Properties.of(Material.STONE)
+                    .strength(2f, 1200f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROOT_WALL = BLOCKS.register("root_wall",
+            () -> new WallBlock(Block.Properties.of(Material.STONE)
+                    .strength(2f, 1200f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SMOOTH_ROOT_STAIRS = BLOCKS.register("smooth_root_stairs",
+            () -> new StairBlock(() -> ModBlocks.SMOOTH_BLOCK_OF_ROOTS.get().defaultBlockState(), Block.Properties.of(Material.STONE)
+                    .strength(2f, 1200f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SMOOTH_ROOT_SLAB = BLOCKS.register("smooth_root_slab",
+            () -> new SlabBlock(Block.Properties.of(Material.STONE)
+                    .strength(2f, 1200f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SMOOTH_ROOT_WALL = BLOCKS.register("smooth_root_wall",
+            () -> new WallBlock(Block.Properties.of(Material.STONE)
+                    .strength(2f, 1200f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> LAYERED_BLOCK_OF_IRON = BLOCKS.register("layered_block_of_iron",
             () -> new Block(Block.Properties.of(Material.STONE).strength(8f, 1200f).requiresCorrectToolForDrops()));
-
     public static final RegistryObject<Block> AIRPLANE_BLOCK = BLOCKS.register("airplane_block",
             () -> new AirplaneBlock(Block.Properties.of(Material.STONE).strength(8f, 1200f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> ALOEE = BLOCKS.register("aloee",
             () -> new FlowerBlock(MobEffects.REGENERATION, 60,  Block.Properties.of(Material.PLANT).strength(0.05f, 1f).noCollission()));
-
+/*
     public static final RegistryObject<Block> LUCKY_COLOR_BLOCK = BLOCKS.register("lucky_color_block",
             () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f)));
-
+*/
 
 
 

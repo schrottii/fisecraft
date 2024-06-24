@@ -11,17 +11,27 @@
 
   "block.fisecraft.shadowflower": "Shadowflower",
   "block.fisecraft.lightflower": "Lightflower",
+
   "block.fisecraft.roots": "Roots",
   "block.fisecraft.block_of_roots": "Block of Roots",
   "block.fisecraft.chiseled_block_of_roots": "Chiseled Block of Roots",
   "block.fisecraft.shiny_block_of_roots": "Shiny Block of Roots",
   "block.fisecraft.rough_block_of_roots": "Rough Block of Roots",
   "block.fisecraft.smooth_block_of_roots": "Smooth Block of Roots",
+  "block.fisecraft.root_stairs": "Root Stairs",
+  "block.fisecraft.root_slab": "Root Slab",
+  "block.fisecraft.root_wall": "Root Wall",
+  "block.fisecraft.smooth_root_stairs": "Smooth Root Stairs",
+  "block.fisecraft.smooth_root_slab": "Smooth Root Slab",
+  "block.fisecraft.smooth_root_wall": "Smooth Root Wall",
+
   "block.fisecraft.layered_block_of_iron": "Layered Block of Iron",
   "block.fisecraft.airplane_block": "Airplane Block",
   "block.fisecraft.aloee": "Aloee",
   "block.fisecraft.lucky_color_block": "Lucky Color Block",
 
   "enchantment.fisecraft.elmending": "Elmending",
-  "enchantment.fisecraft.curseroot": "Curse of the Root"
+  "enchantment.fisecraft.elmending.desc": "Attacking mobs can sometimes drop a Root",
+  "enchantment.fisecraft.curseroot": "Curse of the Root",
+  "enchantment.fisecraft.curseroot.desc": "When harmed, have a chance of getting poisoned, or dropping a Root and gaining fire resistance."
 }

@@ -1,3 +1,6 @@
 {
-  "parent": "fisecraft:block/shadowflower"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "fisecraft:block/shadowflower"
+  }
 }

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "fisecraft:block_of_roots"
+  },
+  "result": "fisecraft:root_stairs",
+  "count": 1
+}

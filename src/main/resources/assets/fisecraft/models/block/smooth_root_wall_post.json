@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "fisecraft:block/smooth_block_of_roots"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "fisecraft:block/smooth_block_of_roots",
+    "top": "fisecraft:block/smooth_block_of_roots",
+    "side": "fisecraft:block/smooth_block_of_roots"
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#forge:is_plains",
-  "features": "fisecraft:lucky_color_block",
-  "step": "vegetal_decoration"
-}

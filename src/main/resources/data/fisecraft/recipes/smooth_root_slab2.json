@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "fisecraft:smooth_block_of_roots"
+  },
+  "result": "fisecraft:smooth_root_slab",
+  "count": 1
+}

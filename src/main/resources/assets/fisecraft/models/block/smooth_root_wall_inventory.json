@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "fisecraft:block/smooth_block_of_roots"
+  }
+}
