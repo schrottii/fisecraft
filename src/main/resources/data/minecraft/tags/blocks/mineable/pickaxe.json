@@ -8,6 +8,17 @@
     "fisecraft:rough_block_of_roots",
     "fisecraft:smooth_block_of_roots",
     "fisecraft:layered_block_of_iron",
+    "fisecraft:root_slab",
+    "fisecraft:root_stairs",
+    "fisecraft:root_wall",
+    "fisecraft:root_door",
+    "fisecraft:root_trapdoor",
+    "fisecraft:smooth_root_slab",
+    "fisecraft:smooth_root_stairs",
+    "fisecraft:smooth_root_wall",
+    "fisecraft:smooth_root_door",
+    "fisecraft:smooth_root_trapdoor",
+
     "fisecraft:airplane_block"
   ]
 }

@@ -63,6 +63,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> ROOT_WALL = BLOCKS.register("root_wall",
             () -> new WallBlock(Block.Properties.of(Material.STONE)
                     .strength(2f, 1200f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROOT_DOOR = BLOCKS.register("root_door",
+            () -> new DoorBlock(Block.Properties.of(Material.WOOD)
+                    .strength(2f, 1200f).noOcclusion().requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROOT_TRAPDOOR = BLOCKS.register("root_trapdoor",
+            () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD)
+                    .strength(2f, 1200f).noOcclusion().requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SMOOTH_ROOT_STAIRS = BLOCKS.register("smooth_root_stairs",
             () -> new StairBlock(() -> ModBlocks.SMOOTH_BLOCK_OF_ROOTS.get().defaultBlockState(), Block.Properties.of(Material.STONE)
@@ -73,6 +79,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> SMOOTH_ROOT_WALL = BLOCKS.register("smooth_root_wall",
             () -> new WallBlock(Block.Properties.of(Material.STONE)
                     .strength(2f, 1200f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SMOOTH_ROOT_DOOR = BLOCKS.register("smooth_root_door",
+            () -> new DoorBlock(Block.Properties.of(Material.WOOD)
+                    .strength(2f, 1200f).noOcclusion().requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SMOOTH_ROOT_TRAPDOOR = BLOCKS.register("smooth_root_trapdoor",
+            () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD)
+                    .strength(2f, 1200f).noOcclusion().requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> LAYERED_BLOCK_OF_IRON = BLOCKS.register("layered_block_of_iron",
             () -> new Block(Block.Properties.of(Material.STONE).strength(8f, 1200f).requiresCorrectToolForDrops()));

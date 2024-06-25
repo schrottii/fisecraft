@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "R R",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "fisecraft:smooth_block_of_roots"
+    }
+  },
+  "result": {
+    "item": "fisecraft:smooth_root_trapdoor",
+    "count": 2
+  }
+}

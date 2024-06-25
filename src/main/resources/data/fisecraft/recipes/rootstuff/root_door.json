@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RR ",
+    "RR ",
+    "RR "
+  ],
+  "key": {
+    "R": {
+      "item": "fisecraft:block_of_roots"
+    }
+  },
+  "result": {
+    "item": "fisecraft:root_door",
+    "count": 3
+  }
+}

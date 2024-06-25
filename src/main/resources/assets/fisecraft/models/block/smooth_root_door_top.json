@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "top": "fisecraft:block/smooth_root_door",
+    "bottom": "fisecraft:block/smooth_block_of_roots"
+  }
+}

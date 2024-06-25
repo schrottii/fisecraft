@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SRS",
+    "RSR",
+    "SRS"
+  ],
+  "key": {
+    "R": {
+      "item": "fisecraft:root"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "minecraft:cobweb",
+    "count": 1
+  }
+}

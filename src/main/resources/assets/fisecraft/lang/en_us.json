@@ -21,9 +21,13 @@
   "block.fisecraft.root_stairs": "Root Stairs",
   "block.fisecraft.root_slab": "Root Slab",
   "block.fisecraft.root_wall": "Root Wall",
+  "block.fisecraft.root_door": "Root Door",
+  "block.fisecraft.root_trapdoor": "Root Trapdoor",
   "block.fisecraft.smooth_root_stairs": "Smooth Root Stairs",
   "block.fisecraft.smooth_root_slab": "Smooth Root Slab",
   "block.fisecraft.smooth_root_wall": "Smooth Root Wall",
+  "block.fisecraft.smooth_root_door": "Smooth Root Door",
+  "block.fisecraft.smooth_root_trapdoor": "Smooth Root Trapdoor",
 
   "block.fisecraft.layered_block_of_iron": "Layered Block of Iron",
   "block.fisecraft.airplane_block": "Airplane Block",
