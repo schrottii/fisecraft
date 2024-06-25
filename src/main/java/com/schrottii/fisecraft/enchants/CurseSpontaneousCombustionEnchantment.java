@@ -12,8 +12,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
 
-public class CurseRootEnchantment extends Enchantment {
-    public CurseRootEnchantment() {
+public class CurseSpontaneousCombustionEnchantment extends Enchantment {
+    public CurseSpontaneousCombustionEnchantment() {
         super(Rarity.RARE, EnchantmentCategory.ARMOR, new EquipmentSlot[]{EquipmentSlot.HEAD});
     }
 
@@ -29,18 +29,8 @@ public class CurseRootEnchantment extends Enchantment {
 
     @Override
     public void doPostHurt(LivingEntity target, Entity attacker, int level) {
-        target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1000));
-
-        if (Math.random() * 10 < level && !target.level.isClientSide) {
-            target.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2000));
-
-            ItemStack itemStack = new ItemStack(ModItems.ROOT.get());
-            BlockPos playerPos = target.blockPosition();
-            ItemEntity itemEntity = new ItemEntity(target.level, playerPos.getX(), playerPos.getY() + 5, playerPos.getZ(), itemStack);
-            target.level.addFreshEntity(itemEntity);
-        }
-        else {
-            target.addEffect(new MobEffectInstance(MobEffects.POISON, 1000));
+        if (Math.random() < 0.1 * level && !target.level.isClientSide) {
+            target.setSecondsOnFire((int) Math.ceil(Math.random() * 15 * level));
         }
     }
 }

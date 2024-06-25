@@ -22,7 +22,7 @@ public class ElmendingEnchantment extends Enchantment {
 
     public void doPostAttack(LivingEntity attacker, Entity target, int level) {
             if (Math.random() * 10 < level && !attacker.level.isClientSide) {
-                ItemStack itemStack = new ItemStack(ModItems.ROOT.get()); // Change this to the item you want to spawn
+                ItemStack itemStack = new ItemStack(ModItems.ROOT.get());
                 BlockPos playerPos = attacker.blockPosition();
                 ItemEntity itemEntity = new ItemEntity(attacker.level, playerPos.getX(), playerPos.getY() + 5, playerPos.getZ(), itemStack);
                 attacker.level.addFreshEntity(itemEntity);

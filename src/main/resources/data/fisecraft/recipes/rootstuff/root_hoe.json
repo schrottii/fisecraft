@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RR ",
+    " I ",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "item": "fisecraft:root"
+    },
+    "R": {
+      "item": "fisecraft:block_of_roots"
+    }
+  },
+  "result": {
+    "item": "fisecraft:root_hoe",
+    "count": 1
+  }
+}

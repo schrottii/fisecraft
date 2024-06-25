@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IRI",
+    "IGI",
+    "G G"
+  ],
+  "key": {
+    "I": {
+      "item": "fisecraft:root"
+    },
+    "R": {
+      "item": "fisecraft:block_of_roots"
+    },
+    "G": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "result": {
+    "item": "fisecraft:root_helmet",
+    "count": 1
+  }
+}

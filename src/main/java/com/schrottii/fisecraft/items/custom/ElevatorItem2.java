@@ -1,4 +1,4 @@
-package com.schrottii.fisecraft.items;
+package com.schrottii.fisecraft.items.custom;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
