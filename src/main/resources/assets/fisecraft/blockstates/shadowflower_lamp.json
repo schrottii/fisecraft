@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "fisecraft:block/shadowflower_lamp_on" },
+    "lit=false": { "model": "fisecraft:block/shadowflower_lamp" }
+  }
+}

@@ -1,4 +1,4 @@
-package com.schrottii.fisecraft.blocks;
+package com.schrottii.fisecraft.blocks.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

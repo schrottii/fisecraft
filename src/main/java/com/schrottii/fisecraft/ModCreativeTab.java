@@ -11,7 +11,7 @@ public class ModCreativeTab extends CreativeModeTab {
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(ModItems.TELEPORT_FRUIT.get());
+        return new ItemStack(ModItems.ROOT.get());
     }
 
     public static final ModCreativeTab fisecraft = new ModCreativeTab(CreativeModeTab.TABS.length, "fisecraft");

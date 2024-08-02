@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA ",
+    "AA ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "fisecraft:aloee_vera"
+    }
+  },
+  "result": {
+    "item": "fisecraft:aloee_block",
+    "count": 1
+  }
+}

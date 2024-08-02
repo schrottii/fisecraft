@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "fisecraft:block/kremelo_stage4"
+  }
+}

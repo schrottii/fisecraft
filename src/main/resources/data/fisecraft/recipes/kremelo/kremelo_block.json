@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "KKK",
+    "KKK",
+    "KKK"
+  ],
+  "key": {
+    "K": {
+      "item": "fisecraft:kremelo"
+    }
+  },
+  "result": {
+    "item": "fisecraft:kremelo_block",
+    "count": 1
+  }
+}

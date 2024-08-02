@@ -28,7 +28,7 @@ public class ElevatorItem2 extends Item {
             player.fallDistance = 0F;
             player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 9));
             player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 9));
-            player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0));
+            player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 100, 0));
             player.playSound(SoundEvents.ENDERMAN_TELEPORT, 1.0F, 1.0F);
 
             ItemStack stack = player.getItemInHand(hand);

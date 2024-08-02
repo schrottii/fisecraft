@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "FGF",
+    " F "
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glowstone"
+    },
+    "F": {
+      "item": "fisecraft:lightflower"
+    }
+  },
+  "result": {
+    "item": "fisecraft:lightflower_lamp",
+    "count": 1
+  }
+}

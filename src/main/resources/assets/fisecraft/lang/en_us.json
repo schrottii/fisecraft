@@ -9,19 +9,29 @@
   "item.fisecraft.aloee_vera": "Aloee Vera",
   "item.fisecraft.bandage": "Bandage",
 
+  "item.fisecraft.kremelo_seeds": "Kremelo Seeds",
+  "item.fisecraft.kremelo": "Kremelo",
+  "item.fisecraft.kremelo_soup": "Kremelo Soup",
+  "item.fisecraft.kremelo_sticks": "Kremelo Sticks",
+
   "item.fisecraft.root_pickaxe": "Root Pickaxe",
   "item.fisecraft.root_axe": "Root Axe",
   "item.fisecraft.root_shovel": "Root Shovel",
   "item.fisecraft.root_hoe": "Root Hoe",
   "item.fisecraft.root_sword": "Root Sword",
-
   "item.fisecraft.root_helmet": "Root Crown",
   "item.fisecraft.root_chestplate": "Root Chestplate",
   "item.fisecraft.root_leggings": "Root Leggings",
   "item.fisecraft.root_boots": "Root Boots",
 
+
+
+
+
   "block.fisecraft.shadowflower": "Shadowflower",
   "block.fisecraft.lightflower": "Lightflower",
+  "block.fisecraft.shadowflower_lamp": "Shadowflower Lamp",
+  "block.fisecraft.lightflower_lamp": "Lightflower Lamp",
 
   "block.fisecraft.roots": "Roots",
   "block.fisecraft.block_of_roots": "Block of Roots",
@@ -39,11 +49,20 @@
   "block.fisecraft.smooth_root_wall": "Smooth Root Wall",
   "block.fisecraft.smooth_root_door": "Smooth Root Door",
   "block.fisecraft.smooth_root_trapdoor": "Smooth Root Trapdoor",
+  "block.fisecraft.root_barrel": "Root Barrel",
 
   "block.fisecraft.layered_block_of_iron": "Layered Block of Iron",
   "block.fisecraft.airplane_block": "Airplane Block",
   "block.fisecraft.aloee": "Aloee",
-  "block.fisecraft.lucky_color_block": "Lucky Color Block",
+  "block.fisecraft.aloee_block": "Aloee Block",
+
+  "block.fisecraft.kremelo_plant": "Kremelo Plant",
+  "block.fisecraft.kremelo_block": "Kremelo Block",
+  "block.fisecraft.kremelo_block_smooth": "Smooth Kremelo Block",
+
+
+
+
 
   "enchantment.fisecraft.elmending": "Elmending",
   "enchantment.fisecraft.elmending.desc": "Attacking mobs can sometimes drop a Root",

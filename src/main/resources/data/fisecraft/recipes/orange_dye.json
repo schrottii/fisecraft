@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "fisecraft:aloee"
+      "item": "fisecraft:kremelo"
     }
   ],
   "result": {
-    "item": "fisecraft:aloee_vera",
-    "count": 1
+    "item": "minecraft:orange_dye",
+    "count": 2
   }
 }

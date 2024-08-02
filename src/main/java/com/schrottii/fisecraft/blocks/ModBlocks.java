@@ -2,14 +2,17 @@ package com.schrottii.fisecraft.blocks;
 
 import com.schrottii.fisecraft.Fisecraft;
 import com.schrottii.fisecraft.ModCreativeTab;
+import com.schrottii.fisecraft.blocks.custom.AirplaneBlock;
+import com.schrottii.fisecraft.blocks.custom.CustomFlowerBlock;
+import com.schrottii.fisecraft.blocks.custom.KremeloPlantBlock;
+import com.schrottii.fisecraft.items.ModItems;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -19,86 +22,114 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
+
 @Mod.EventBusSubscriber(modid = Fisecraft.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModBlocks {
-    @SubscribeEvent
-    public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
-        final IForgeRegistry<Item> registry = event.getRegistry();
-
-        BLOCKS.getEntries().stream().map(RegistryObject::get).forEach( (block) -> {
-            final Item.Properties properties = new Item.Properties().tab(ModCreativeTab.fisecraft);
-            final BlockItem blockItem = new BlockItem(block, properties);
-            blockItem.setRegistryName(block.getRegistryName());
-            registry.register(blockItem);
-        });
-    }
-
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Fisecraft.MODID);
 
-    public static final RegistryObject<Block> SHADOWFLOWER = BLOCKS.register("shadowflower",
-            () -> new FlowerBlock(MobEffects.BLINDNESS, 120,  Block.Properties.of(Material.PLANT).strength(0.5f, 1f).speedFactor(0.6f).noCollission()));
-    public static final RegistryObject<Block> LIGHTFLOWER = BLOCKS.register("lightflower",
-            () -> new FlowerBlock(MobEffects.NIGHT_VISION, 120,  Block.Properties.of(Material.PLANT).strength(0.2f, 1f).lightLevel((state) -> 6).speedFactor(1.2f).noCollission()));
+    public static final RegistryObject<Block> SHADOWFLOWER = registerBlock("shadowflower",
+            () -> new CustomFlowerBlock(MobEffects.BLINDNESS, 120,  Block.Properties.of(Material.PLANT).strength(0.5f, 1f).speedFactor(0.6f).noCollission()));
+    public static final RegistryObject<Block> LIGHTFLOWER = registerBlock("lightflower",
+            () -> new CustomFlowerBlock(MobEffects.NIGHT_VISION, 120,  Block.Properties.of(Material.PLANT).strength(0.2f, 1f).lightLevel((state) -> 6).speedFactor(1.2f).noCollission()));
 
-    public static final RegistryObject<Block> ROOTS = BLOCKS.register("roots",
+    public static final RegistryObject<Block> ROOTS = registerBlock("roots",
             () -> new GrassBlock(Block.Properties.of(Material.STONE).strength(0.8f, 1f).speedFactor(0.2f).noCollission()));
 
-    public static final RegistryObject<Block> BLOCK_OF_ROOTS = BLOCKS.register("block_of_roots",
+    public static final RegistryObject<Block> BLOCK_OF_ROOTS = registerBlock("block_of_roots",
             () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> CHISELED_BLOCK_OF_ROOTS = BLOCKS.register("chiseled_block_of_roots",
+    public static final RegistryObject<Block> CHISELED_BLOCK_OF_ROOTS = registerBlock("chiseled_block_of_roots",
             () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> SHINY_BLOCK_OF_ROOTS = BLOCKS.register("shiny_block_of_roots",
+    public static final RegistryObject<Block> SHINY_BLOCK_OF_ROOTS = registerBlock("shiny_block_of_roots",
             () -> new Block(Block.Properties.of(Material.STONE).strength(1.5f, 1200f).requiresCorrectToolForDrops().lightLevel((state) -> 9)));
-    public static final RegistryObject<Block> ROUGH_BLOCK_OF_ROOTS = BLOCKS.register("rough_block_of_roots",
+    public static final RegistryObject<Block> ROUGH_BLOCK_OF_ROOTS = registerBlock("rough_block_of_roots",
             () -> new Block(Block.Properties.of(Material.STONE).strength(4f, 1200f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> SMOOTH_BLOCK_OF_ROOTS = BLOCKS.register("smooth_block_of_roots",
+    public static final RegistryObject<Block> SMOOTH_BLOCK_OF_ROOTS = registerBlock("smooth_block_of_roots",
             () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f).requiresCorrectToolForDrops()));
 
-    public static final RegistryObject<Block> ROOT_STAIRS = BLOCKS.register("root_stairs",
+    public static final RegistryObject<Block> ROOT_STAIRS = registerBlock("root_stairs",
             () -> new StairBlock(() -> ModBlocks.BLOCK_OF_ROOTS.get().defaultBlockState(), Block.Properties.of(Material.STONE)
                     .strength(2f, 1200f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> ROOT_SLAB = BLOCKS.register("root_slab",
+    public static final RegistryObject<Block> ROOT_SLAB = registerBlock("root_slab",
             () -> new SlabBlock(Block.Properties.of(Material.STONE)
                     .strength(2f, 1200f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> ROOT_WALL = BLOCKS.register("root_wall",
+    public static final RegistryObject<Block> ROOT_WALL = registerBlock("root_wall",
             () -> new WallBlock(Block.Properties.of(Material.STONE)
                     .strength(2f, 1200f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> ROOT_DOOR = BLOCKS.register("root_door",
+    public static final RegistryObject<Block> ROOT_DOOR = registerBlock("root_door",
             () -> new DoorBlock(Block.Properties.of(Material.WOOD)
                     .strength(2f, 1200f).noOcclusion().requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> ROOT_TRAPDOOR = BLOCKS.register("root_trapdoor",
+    public static final RegistryObject<Block> ROOT_TRAPDOOR = registerBlock("root_trapdoor",
             () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD)
                     .strength(2f, 1200f).noOcclusion().requiresCorrectToolForDrops()));
 
-    public static final RegistryObject<Block> SMOOTH_ROOT_STAIRS = BLOCKS.register("smooth_root_stairs",
+    public static final RegistryObject<Block> SMOOTH_ROOT_STAIRS = registerBlock("smooth_root_stairs",
             () -> new StairBlock(() -> ModBlocks.SMOOTH_BLOCK_OF_ROOTS.get().defaultBlockState(), Block.Properties.of(Material.STONE)
                     .strength(2f, 1200f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> SMOOTH_ROOT_SLAB = BLOCKS.register("smooth_root_slab",
+    public static final RegistryObject<Block> SMOOTH_ROOT_SLAB = registerBlock("smooth_root_slab",
             () -> new SlabBlock(Block.Properties.of(Material.STONE)
                     .strength(2f, 1200f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> SMOOTH_ROOT_WALL = BLOCKS.register("smooth_root_wall",
+    public static final RegistryObject<Block> SMOOTH_ROOT_WALL = registerBlock("smooth_root_wall",
             () -> new WallBlock(Block.Properties.of(Material.STONE)
                     .strength(2f, 1200f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> SMOOTH_ROOT_DOOR = BLOCKS.register("smooth_root_door",
+    public static final RegistryObject<Block> SMOOTH_ROOT_DOOR = registerBlock("smooth_root_door",
             () -> new DoorBlock(Block.Properties.of(Material.WOOD)
                     .strength(2f, 1200f).noOcclusion().requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> SMOOTH_ROOT_TRAPDOOR = BLOCKS.register("smooth_root_trapdoor",
+    public static final RegistryObject<Block> SMOOTH_ROOT_TRAPDOOR = registerBlock("smooth_root_trapdoor",
             () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD)
                     .strength(2f, 1200f).noOcclusion().requiresCorrectToolForDrops()));
 
-    public static final RegistryObject<Block> LAYERED_BLOCK_OF_IRON = BLOCKS.register("layered_block_of_iron",
+    public static final RegistryObject<Block> LAYERED_BLOCK_OF_IRON = registerBlock("layered_block_of_iron",
             () -> new Block(Block.Properties.of(Material.STONE).strength(8f, 1200f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> AIRPLANE_BLOCK = BLOCKS.register("airplane_block",
+    public static final RegistryObject<Block> AIRPLANE_BLOCK = registerBlock("airplane_block",
             () -> new AirplaneBlock(Block.Properties.of(Material.STONE).strength(8f, 1200f).requiresCorrectToolForDrops()));
 
-    public static final RegistryObject<Block> ALOEE = BLOCKS.register("aloee",
-            () -> new FlowerBlock(MobEffects.REGENERATION, 60,  Block.Properties.of(Material.PLANT).strength(0.05f, 1f).noCollission()));
-/*
-    public static final RegistryObject<Block> LUCKY_COLOR_BLOCK = BLOCKS.register("lucky_color_block",
+    public static final RegistryObject<Block> ALOEE = registerBlock("aloee",
+            () -> new CustomFlowerBlock(MobEffects.REGENERATION, 60,  Block.Properties.of(Material.PLANT).strength(0.05f, 1f).noCollission()));
+    public static final RegistryObject<Block> ALOEE_BLOCK = registerBlock("aloee_block",
+            () -> new Block(Block.Properties.of(Material.PLANT).strength(0.1f, 400f)));
+
+    public static final RegistryObject<Block> SHADOWFLOWER_LAMP = registerBlock("shadowflower_lamp",
+            () -> new RedstoneLampBlock(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).lightLevel(litBlockEmission(15)).strength(0.3F).sound(SoundType.GLASS)));
+
+    public static final RegistryObject<Block> LIGHTFLOWER_LAMP = registerBlock("lightflower_lamp",
+            () -> new RedstoneLampBlock(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).lightLevel(litBlockEmission(15)).strength(0.3F).sound(SoundType.GLASS)));
+
+    public static final RegistryObject<Block> ROOT_BARREL = registerBlock("root_barrel",
+            () -> new BarrelBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5F).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> KREMELO_PLANT = registerBlockWithoutBlockItem("kremelo_plant",
+            () -> new KremeloPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+    public static final RegistryObject<Block> KREMELO_BLOCK = registerBlock("kremelo_block",
+            () -> new Block(Block.Properties.of(Material.PLANT).strength(0.3f, 1200f)));
+    public static final RegistryObject<Block> KREMELO_BLOCK_SMOOTH = registerBlock("kremelo_block_smooth",
+            () -> new Block(Block.Properties.of(Material.PLANT).strength(0.3f, 1200f)));
+    /*
+    public static final RegistryObject<Block> LUCKY_COLOR_BLOCK = registerBlock("lucky_color_block",
             () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f)));
 */
 
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn, ModCreativeTab.fisecraft);
+        return toReturn;
+    }
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
+                                                                            CreativeModeTab tab) {
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
+                new Item.Properties().tab(tab)));
+    }
 
+    private static ToIntFunction<BlockState> litBlockEmission(int p_50760_) {
+        return (p_50763_) -> {
+            return p_50763_.getValue(BlockStateProperties.LIT) ? p_50760_ : 0;
+        };
+    }
+
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
+    }
 
     @SubscribeEvent
     public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {

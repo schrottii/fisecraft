@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "fisecraft:kremelo_block"
+  },
+  "result": "fisecraft:kremelo_block_smooth",
+  "experience": 0.1,
+  "cookingtime": 50
+}

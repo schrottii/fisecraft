@@ -18,6 +18,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import com.schrottii.fisecraft.blocks.ModBlocks;
 
 @Mod.EventBusSubscriber(modid = Fisecraft.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModItems {
@@ -31,7 +32,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> TELEPORT_FRUIT = ITEMS.register("enderfruit",
             () -> new TeleportStaff(new Item.Properties().tab(ModCreativeTab.fisecraft)
-                    .food(new FoodProperties.Builder().nutrition(6).saturationMod(0)
+                    .food(new FoodProperties.Builder().nutrition(4).saturationMod(0)
                             .alwaysEat()
                             .build())));
 
@@ -86,6 +87,17 @@ public class ModItems {
     public static final RegistryObject<Item> ROOT_BOOTS = ITEMS.register("root_boots",
             () -> new ArmorItem(ModArmorMaterials.ROOT, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
+
+    public static final RegistryObject<Item> KREMELO = ITEMS.register("kremelo",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> KREMELO_SEEDS = ITEMS.register("kremelo_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.KREMELO_PLANT.get(), new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> KREMELO_SOUP = ITEMS.register("kremelo_soup",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft).stacksTo(1)
+                    .food(new FoodProperties.Builder().nutrition(6).saturationMod(7.2f).build())));
+    public static final RegistryObject<Item> KREMELO_STICKS = ITEMS.register("kremelo_sticks",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)
+                    .food(new FoodProperties.Builder().fast().nutrition(4).saturationMod(4).build())));
 
     @SubscribeEvent
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {
