@@ -2,6 +2,7 @@ package com.schrottii.fisecraft.items;
 
 import com.schrottii.fisecraft.Fisecraft;
 import com.schrottii.fisecraft.ModCreativeTab;
+import com.schrottii.fisecraft.entity.ModEntityTypes;
 import com.schrottii.fisecraft.items.custom.ElevatorItem;
 import com.schrottii.fisecraft.items.custom.ElevatorItem2;
 import com.schrottii.fisecraft.items.custom.RootSwordItem;
@@ -11,6 +12,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -98,6 +100,10 @@ public class ModItems {
     public static final RegistryObject<Item> KREMELO_STICKS = ITEMS.register("kremelo_sticks",
             () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)
                     .food(new FoodProperties.Builder().fast().nutrition(4).saturationMod(4).build())));
+
+    public static final RegistryObject<Item> ROOTGLASS_SPAWN_EGG = ITEMS.register("rootglass_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.ROOTGLASS,0x74655C, 0xE2B57D,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
 
     @SubscribeEvent
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {

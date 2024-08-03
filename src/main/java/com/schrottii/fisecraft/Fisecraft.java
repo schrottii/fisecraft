@@ -1,13 +1,17 @@
 package com.schrottii.fisecraft;
 
+import com.schrottii.fisecraft.entity.ModEntityTypes;
+import com.schrottii.fisecraft.event.ModEventBusEvents;
 import com.schrottii.fisecraft.items.ModItems;
 import com.schrottii.fisecraft.blocks.ModBlocks;
 import com.mojang.logging.LogUtils;
 import com.schrottii.fisecraft.util.BetterBrewingRecipe;
 import com.schrottii.fisecraft.world.feature.ModConfiguredFeatures;
 import com.schrottii.fisecraft.world.feature.ModPlacedFeatures;
+import com.schrottii.fisecraft.entity.client.RootglassRenderer;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PotionItem;
 import net.minecraft.world.item.alchemy.Potions;
@@ -29,6 +33,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
 import java.util.stream.Collectors;
 
@@ -43,20 +48,26 @@ public class Fisecraft
 
     public Fisecraft()
     {
-        // Register the setup method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        // Register the enqueueIMC method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
-        // Register the processIMC method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        modEventBus.addListener(this::setup);
 
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModEnchantments.ENCHANTMENTS.register(modEventBus);
+        ModEntityTypes.register(modEventBus);
+
+        modEventBus.addListener(this::setup);
+        modEventBus.addListener(this::clientSetup);
+
+        try {
+            // Code that might throw an exception
+            GeckoLib.initialize();
+        } catch (Exception e) {
+            // Log the original error if needed
+            e.printStackTrace();
+
+            // Throw a new exception with a custom message
+            throw new RuntimeException("Error: Geckolib is not installed", e);
+        }
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -73,6 +84,8 @@ public class Fisecraft
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ROOT_TRAPDOOR.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SMOOTH_ROOT_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SMOOTH_ROOT_TRAPDOOR.get(), RenderType.cutout());
+
+        EntityRenderers.register(ModEntityTypes.ROOTGLASS.get(), RootglassRenderer::new);
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -83,40 +96,5 @@ public class Fisecraft
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
                     ModItems.ROOT.get(), Potions.POISON));
         });
-    }
-
-    private void enqueueIMC(final InterModEnqueueEvent event)
-    {
-        // Some example code to dispatch IMC to another mod
-        InterModComms.sendTo("fisecraft", "helloworld", () -> { LOGGER.info("Hello world from the MDK"); return "Hello world";});
-    }
-
-    private void processIMC(final InterModProcessEvent event)
-    {
-        // Some example code to receive and process InterModComms from other mods
-        LOGGER.info("Got IMC {}", event.getIMCStream().
-                map(m->m.messageSupplier().get()).
-                collect(Collectors.toList()));
-    }
-
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
-    }
-
-    // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
-    // Event bus for receiving Registry Events)
-    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents
-    {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent)
-        {
-            // Register a new block here
-            LOGGER.info("HELLO from Register Block");
-        }
     }
 }
