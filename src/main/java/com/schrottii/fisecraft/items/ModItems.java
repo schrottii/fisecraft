@@ -3,10 +3,7 @@ package com.schrottii.fisecraft.items;
 import com.schrottii.fisecraft.Fisecraft;
 import com.schrottii.fisecraft.ModCreativeTab;
 import com.schrottii.fisecraft.entity.ModEntityTypes;
-import com.schrottii.fisecraft.items.custom.ElevatorItem;
-import com.schrottii.fisecraft.items.custom.ElevatorItem2;
-import com.schrottii.fisecraft.items.custom.RootSwordItem;
-import com.schrottii.fisecraft.items.custom.TeleportStaff;
+import com.schrottii.fisecraft.items.custom.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -103,6 +100,13 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROOTGLASS_SPAWN_EGG = ITEMS.register("rootglass_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.ROOTGLASS,0x74655C, 0xE2B57D,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> DIREKNIGHT_SPAWN_EGG = ITEMS.register("direknight_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.DIREKNIGHT,0x1D0700, 0x850808,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+
+    public static final RegistryObject<Item> DIRE_PAIN_SWORD = ITEMS.register("dire_pain_sword",
+            () -> new DirePainSwordItem(Tiers.DIAMOND, 4, -3f,
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
 
     @SubscribeEvent

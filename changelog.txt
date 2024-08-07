@@ -1,2 +1,99 @@
-v1.0:
-- Fisecraft first version
+-----------------------------------------
+v1.0   2024-??-??
+
+== Release ==
+-> Blocks:
+- 28 total blocks
+- Airplane Block: Can be crafted. Use paper to teleport 10k blocks in that direction
+- Aloee: Plant, generates in dry places
+- Aloee Block: Deco block, crafted from Aloee
+- Block of Roots: Deco block, crafted from Roots, can be turned into many more blocks
+- Chiseled Block of Roots: Deco block
+- Kremelo Block: Deco block, crafted from Kremelo
+- Smooth Kremelo Block: Deco block
+- Kremelo Crop
+- Layered Block of Iron
+- Lightflower: Generated in cold places
+- Lightflower Lamp: Works the same as a Redstone Lamp
+- Root Barrel: Works the same as a normal Barrel
+- Root Door
+- Root Slab
+- Root Stairs
+- Root Trapdoor
+- Root Wall
+- Roots: Generate in caves, can be harvested to craft many things
+- Rough Block of Roots: Deco block
+- Shadowflower: Generates in spooky places
+- Shadowflower Lamp: Works the same as a Redstone Lamp
+- Shiny Block of Roots: Deco block
+- Smooth Block of Roots: Deco block
+- Smooth Root Door
+- Smooth Root Slab
+- Smooth Root Stairs
+- Smooth Root Trapdoor
+- Smooth Root Wall
+
+-> Items:
+- 20 total items
+- Aloee Vera: Gained from Aloee, used to craft Bandages
+- Bandage: Can be eaten to regenerate some health
+- Digelevator: Teleports you to almost Bedrock height, used to quickly get underground
+- Enderfruit: Food, teleports you a bit forward if possible
+- Escapelevator: Teleports you to the sky, used to quickly get out of a cave
+- Honeysquash: Food, gives speed
+- Kremelo: Plant
+- Kremelo Seeds: Crop, can only be obtained from crafting
+- Kremelo Soup: Food
+- Kremelo Sticks: Food, can be eaten fast
+- Root
+- Root Axe
+- Root Boots
+- Root Chestplate
+- Root Helmet
+- Root Hoe
+- Root Leggins
+- Root Pickaxe
+- Root Shovel
+- Root Sword
+
+-> Recipes:
+- 65 total recipes
+- 13: Airplane Block, Aloee Block, Aloee Vera, Bandage, Digelevator (2x), Enderfruit, Escapelevator (2x), Honeysquash, Layered Block of Iron, Lightflower Lamp, Shadowflower Lamp
+- 37: Block of Roots, Brown Dye, Chiseled Block of Roots (2x), Cobweb, Root (2x), -Axe, -Barrel, -Boots, -Chestplate, -Door, -Helmet, -Hoe, -Leggings, -Pickaxe, -Shovel, -Slab (2x), -Stairs (2x), -Sword, -Trapdoor, -Wall (2x). Rooted Dirt, Rough Block of Roots, Shiny Block of Roots, Smooth Block of Roots, -Door, -Slab (2x), -Stairs (2x), -Trapdoor, -Wall (2x)
+- 5: Kremelo Block, Smooth Kremelo Block, Kremelo Seeds, Kremelo Soup, Kremelo Sticks
+- 10: Black Dye, Enchanted Golden Apple, Glowstone Dust, Green Dye, Gunpowder, Kelp, Ladder, Orange Dye, Paper, White Dye
+
+-> Other:
+- Uploaded mod to Curseforge
+- Learned how to make mods ;)
+
+
+
+-----------------------------------------
+v1.1   2024-??-??
+
+== NAME ==
+-> Mobs:
+- 2 new mobs
+- Rootglass: Emotionless creature. Spawns in dry places, low health, can be tamed with Roots, can be bred with Clocks, can be killed for Roots and Sand/Glass
+- Dire Knight: Brutal killer. Spawns in the Nether, rarely, mini boss
+
+-> Structures:
+- 2 new structures
+- Flying Beam: Spawns in the End, little flying beam that can contain an iron block or diamond block
+- Hourglass: Spawns in dry places, built of root blocks, sand and glass. Home of the Rootglass
+
+-> Blocks:
+- 0 new blocks
+
+-> Items:
+- 2 new items
+- Rootglass Spawn Egg
+- Dire Knight Spawn Egg
+- Dire Pain Sword: Deals high damage and wither effect
+
+-> Recipes:
+- 0 new recipes
+
+-> Other:
+- Fixed single root blocks bug

@@ -1,6 +1,9 @@
 package com.schrottii.fisecraft;
 
 import com.schrottii.fisecraft.entity.ModEntityTypes;
+import com.schrottii.fisecraft.entity.client.DireKnightRenderer;
+import com.schrottii.fisecraft.entity.custom.DireKnightEntity;
+import com.schrottii.fisecraft.entity.custom.RootglassEntity;
 import com.schrottii.fisecraft.event.ModEventBusEvents;
 import com.schrottii.fisecraft.items.ModItems;
 import com.schrottii.fisecraft.blocks.ModBlocks;
@@ -9,9 +12,14 @@ import com.schrottii.fisecraft.util.BetterBrewingRecipe;
 import com.schrottii.fisecraft.world.feature.ModConfiguredFeatures;
 import com.schrottii.fisecraft.world.feature.ModPlacedFeatures;
 import com.schrottii.fisecraft.entity.client.RootglassRenderer;
+import com.schrottii.fisecraft.world.structure.ModStructures;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PotionItem;
 import net.minecraft.world.item.alchemy.Potions;
@@ -19,6 +27,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.RegistryEvent;
@@ -32,6 +41,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.server.ServerLifecycleHooks;
 import org.slf4j.Logger;
 import software.bernie.geckolib3.GeckoLib;
 
@@ -54,6 +64,7 @@ public class Fisecraft
         ModBlocks.BLOCKS.register(modEventBus);
         ModEnchantments.ENCHANTMENTS.register(modEventBus);
         ModEntityTypes.register(modEventBus);
+        ModStructures.register(modEventBus);
 
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::clientSetup);
@@ -86,6 +97,7 @@ public class Fisecraft
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SMOOTH_ROOT_TRAPDOOR.get(), RenderType.cutout());
 
         EntityRenderers.register(ModEntityTypes.ROOTGLASS.get(), RootglassRenderer::new);
+        EntityRenderers.register(ModEntityTypes.DIREKNIGHT.get(), DireKnightRenderer::new);
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -95,6 +107,18 @@ public class Fisecraft
                     ModItems.ALOEE_VERA.get(), Potions.REGENERATION));
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
                     ModItems.ROOT.get(), Potions.POISON));
+
+
+
+            SpawnPlacements.register(ModEntityTypes.ROOTGLASS.get(),
+                    SpawnPlacements.Type.ON_GROUND,
+                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    RootglassEntity::checkRootglassSpawnRules);
+
+            SpawnPlacements.register(ModEntityTypes.DIREKNIGHT.get(),
+                    SpawnPlacements.Type.ON_GROUND,
+                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    DireKnightEntity::checkDireKnightSpawnRules);
         });
     }
 }

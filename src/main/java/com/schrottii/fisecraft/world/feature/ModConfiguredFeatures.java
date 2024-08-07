@@ -36,9 +36,6 @@ public class ModConfiguredFeatures {
             FeatureUtils.register("roots", Feature.VEGETATION_PATCH,
                     new VegetationPatchConfiguration(BlockTags.STONE_ORE_REPLACEABLES, BlockStateProvider.simple(ModBlocks.ROOTS.get()), PlacementUtils.inlinePlaced(MOSS_VEGETATION), CaveSurface.CEILING, ConstantInt.of(1), 0.0F, 8, 0.0F, UniformInt.of(2, 8), 0.6F));
 
-    public static final Holder<ConfiguredFeature<SimpleBlockConfiguration, ?>> BLOCK_OF_ROOTS =
-            FeatureUtils.register("block_of_roots", Feature.SIMPLE_BLOCK,
-                    new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLOCK_OF_ROOTS.get())));
     public static final Holder<ConfiguredFeature<VegetationPatchConfiguration, ?>> BLOCK_OF_ROOTS2 =
             FeatureUtils.register("block_of_roots2", Feature.VEGETATION_PATCH,
                     new VegetationPatchConfiguration(BlockTags.STONE_ORE_REPLACEABLES, BlockStateProvider.simple(ModBlocks.BLOCK_OF_ROOTS.get()), PlacementUtils.inlinePlaced(MOSS_VEGETATION), CaveSurface.FLOOR, ConstantInt.of(1), 0.0F, 16, 0.0F, UniformInt.of(8, 16), 0.6F));

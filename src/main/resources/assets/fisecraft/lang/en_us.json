@@ -24,7 +24,11 @@
   "item.fisecraft.root_leggings": "Root Leggings",
   "item.fisecraft.root_boots": "Root Boots",
 
+  "item.fisecraft.dire_pain_sword": "Dire Pain Sword",
+
   "item.fisecraft.rootglass_spawn_egg": "Rootglass Spawn Egg",
+  "item.fisecraft.direknight_spawn_egg": "Dire Knight Spawn Egg",
+
 
 
 
@@ -70,5 +74,12 @@
   "enchantment.fisecraft.curseroot": "Curse of the Root",
   "enchantment.fisecraft.curseroot.desc": "When harmed, have a chance of getting poisoned, or dropping a Root and gaining fire resistance.",
   "enchantment.fisecraft.cursespontaneouscombustion": "Curse of Spontaneous Combustion",
-  "enchantment.fisecraft.cursespontaneouscombustion.desc": "When harmed, have a chance of setting yourself on fire."
+  "enchantment.fisecraft.cursespontaneouscombustion.desc": "When harmed, have a chance of setting yourself on fire.",
+
+
+
+
+
+  "entity.fisecraft.rootglass": "Rootglass",
+  "entity.fisecraft.direknight": "Dire Knight"
 }

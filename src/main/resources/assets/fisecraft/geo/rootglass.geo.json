@@ -26,7 +26,33 @@
 								"up": {"uv": [4, 8], "uv_size": [-4, -2]},
 								"down": {"uv": [4, 8], "uv_size": [-4, -2]}
 							}
-						},
+						}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "bone",
+					"pivot": [4, 12, -4],
+					"cubes": [
+						{
+							"origin": [-4, 12, -4],
+							"size": [8, 2, 8],
+							"uv": {
+								"north": {"uv": [0, 6], "uv_size": [4, 2]},
+								"east": {"uv": [0, 6], "uv_size": [4, 2]},
+								"south": {"uv": [0, 6], "uv_size": [4, 2]},
+								"west": {"uv": [0, 6], "uv_size": [4, 2]},
+								"up": {"uv": [4, 8], "uv_size": [-4, -2]},
+								"down": {"uv": [4, 8], "uv_size": [-4, -2]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "bone",
+					"pivot": [-1, 13, 4],
+					"cubes": [
 						{
 							"origin": [1, 13, 4],
 							"size": [3, 1, 1],
@@ -49,25 +75,6 @@
 								"west": {"uv": [0, 0], "uv_size": [4, 4]},
 								"up": {"uv": [4, 4], "uv_size": [-4, -4]},
 								"down": {"uv": [4, 4], "uv_size": [-4, -4]}
-							}
-						}
-					]
-				},
-				{
-					"name": "bone2",
-					"parent": "bone",
-					"pivot": [4, 12, -4],
-					"cubes": [
-						{
-							"origin": [-4, 12, -4],
-							"size": [8, 2, 8],
-							"uv": {
-								"north": {"uv": [0, 6], "uv_size": [4, 2]},
-								"east": {"uv": [0, 6], "uv_size": [4, 2]},
-								"south": {"uv": [0, 6], "uv_size": [4, 2]},
-								"west": {"uv": [0, 6], "uv_size": [4, 2]},
-								"up": {"uv": [4, 8], "uv_size": [-4, -2]},
-								"down": {"uv": [4, 8], "uv_size": [-4, -2]}
 							}
 						}
 					]

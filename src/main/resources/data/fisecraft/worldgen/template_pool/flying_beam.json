@@ -1,0 +1,15 @@
+{
+  "name": "fisecraft:flying_beam",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "fisecraft:flying_beam",
+        "processors": "fisecraft:randomize_beam_inside",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 package com.schrottii.fisecraft.entity;
 
 import com.schrottii.fisecraft.Fisecraft;
+import com.schrottii.fisecraft.entity.custom.DireKnightEntity;
 import com.schrottii.fisecraft.entity.custom.RootglassEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -17,8 +18,14 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<RootglassEntity>> ROOTGLASS =
             ENTITY_TYPES.register("rootglass",
                     () -> EntityType.Builder.of(RootglassEntity::new, MobCategory.CREATURE)
-                            .sized(0.8f, 0.6f)
+                            .sized(1.0f, 1.0f)
                             .build(new ResourceLocation(Fisecraft.MODID, "rootglass").toString()));
+
+    public static final RegistryObject<EntityType<DireKnightEntity>> DIREKNIGHT =
+            ENTITY_TYPES.register("direknight",
+                    () -> EntityType.Builder.of(DireKnightEntity::new, MobCategory.MONSTER)
+                            .sized(1.5f, 2.25f)
+                            .build(new ResourceLocation(Fisecraft.MODID, "direknight").toString()));
 
 
     public static void register(IEventBus eventBus) {

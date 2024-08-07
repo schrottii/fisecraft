@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:pillager_outpost",
+  "config": {
+    "start_pool": "fisecraft:hourglass",
+    "size": 1
+  },
+  "biomes": "#fisecraft:has_structure/hourglass_biomes",
+  "adapt_noise": false,
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "fisecraft:rootglass",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 4
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "fisecraft:flying_beam",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 787878001,
+    "spacing": 24,
+    "separation": 2,
+    "type": "minecraft:random_spread"
+  }
+}

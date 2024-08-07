@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "fisecraft:hourglass",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 787878002,
+    "spacing": 45,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

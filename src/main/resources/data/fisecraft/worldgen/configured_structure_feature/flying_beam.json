@@ -1,0 +1,22 @@
+{
+  "type": "fisecraft:sky_structures",
+  "config": {
+    "start_pool": "fisecraft:flying_beam",
+    "size": 1
+  },
+  "biomes": "#fisecraft:has_structure/flying_beam_biomes",
+  "adapt_noise": false,
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "minecraft:phantom",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    }
+  }
+}
