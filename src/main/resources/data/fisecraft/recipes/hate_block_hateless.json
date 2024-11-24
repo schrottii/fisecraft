@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XEX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:netherrack"
+    },
+    "E": {
+      "item": "fisecraft:hate_block"
+    }
+  },
+  "result": {
+    "item": "fisecraft:hate_block_hateless",
+    "count": 8
+  }
+}

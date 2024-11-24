@@ -11,4 +11,8 @@ public class ModTiers {
     public static final ForgeTier ROOT = new ForgeTier(2, 16, 7.0F,
             1.0F, 40, BlockTags.NEEDS_IRON_TOOL,
             () -> Ingredient.of(ModItems.ROOT.get()));
+
+    public static final ForgeTier DIRE = new ForgeTier(2, 320, 14.0F,
+            2.0F, 10, BlockTags.NEEDS_IRON_TOOL,
+            () -> Ingredient.of(ModItems.DIRE_SHARD.get()));
 }

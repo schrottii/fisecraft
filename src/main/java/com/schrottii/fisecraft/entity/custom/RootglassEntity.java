@@ -62,15 +62,15 @@ public class RootglassEntity extends TamableAnimal implements IAnimatable {
         return TamableAnimal.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 4.5D)
                 .add(Attributes.ATTACK_DAMAGE, 2.0f)
-                .add(Attributes.ATTACK_SPEED, 2.0f)
-                .add(Attributes.MOVEMENT_SPEED, 0.8f).build();
+                .add(Attributes.ATTACK_SPEED, 1.0f)
+                .add(Attributes.MOVEMENT_SPEED, 0.1f).build();
     }
 
     protected void registerGoals() {
         this.goalSelector.addGoal(1, new FloatGoal(this));
         this.goalSelector.addGoal(1, new SitWhenOrderedToGoal(this));
         this.goalSelector.addGoal(2, new TemptGoal(this, 1.25D, Ingredient.of(ModItems.ROOT.get()), false));
-        this.goalSelector.addGoal(2, new PanicGoal(this, 1.25D));
+        this.goalSelector.addGoal(2, new PanicGoal(this, 4.52D));
         this.goalSelector.addGoal(2, new FollowOwnerGoal(this, 1.0D, 10.0F, 2.0F, false));
         this.goalSelector.addGoal(3, new WaterAvoidingRandomStrollGoal(this, 1.0D));
         this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
@@ -90,6 +90,19 @@ public class RootglassEntity extends TamableAnimal implements IAnimatable {
 
     public boolean isFood(ItemStack pStack) {
         return pStack.getItem() == ModItems.ROOT.get();
+    }
+
+    @Override
+    public void die(DamageSource source) {
+        super.die(source);
+
+        if (!this.level.isClientSide) {
+            Random random = new Random();
+            if (random.nextDouble() < 0.01) { // 1% chance
+                ServerLevel serverLevel = (ServerLevel) this.level;
+                ModEntityTypes.ROOTGUARDIAN.get().spawn(serverLevel, null, (Player)null, this.blockPosition(), MobSpawnType.TRIGGERED, true, false);
+            }
+        }
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {

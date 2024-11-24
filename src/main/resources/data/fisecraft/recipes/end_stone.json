@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "FSF",
+    " F "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "F": {
+      "item": "fisecraft:endfise"
+    }
+  },
+  "result": {
+    "item": "minecraft:end_stone",
+    "count": 4
+  }
+}

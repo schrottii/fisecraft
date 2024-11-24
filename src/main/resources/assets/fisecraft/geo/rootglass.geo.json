@@ -6,7 +6,7 @@
 				"identifier": "geometry.rootglass - Converted",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 2,
+				"visible_bounds_width": 3,
 				"visible_bounds_height": 2.5,
 				"visible_bounds_offset": [0, 0.75, 0]
 			},
@@ -54,7 +54,7 @@
 					"pivot": [-1, 13, 4],
 					"cubes": [
 						{
-							"origin": [1, 13, 4],
+							"origin": [-4, 13, -5],
 							"size": [3, 1, 1],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [4, 4]},
@@ -66,7 +66,7 @@
 							}
 						},
 						{
-							"origin": [-4, 13, 4],
+							"origin": [1, 13, -5],
 							"size": [3, 1, 1],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [4, 4]},
@@ -126,7 +126,7 @@
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{
-							"origin": [1, 11, 4],
+							"origin": [-3, 11, -6],
 							"size": [2, 2, 2],
 							"uv": {
 								"north": {"uv": [8, 0], "uv_size": [4, 4]},
@@ -138,7 +138,7 @@
 							}
 						},
 						{
-							"origin": [-3, 11, 4],
+							"origin": [1, 11, -6],
 							"size": [2, 2, 2],
 							"uv": {
 								"north": {"uv": [8, 0], "uv_size": [4, 4]},

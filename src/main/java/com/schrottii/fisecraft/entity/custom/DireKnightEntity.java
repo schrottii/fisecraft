@@ -53,9 +53,6 @@ import java.util.Random;
 public class DireKnightEntity extends Monster implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
 
-    private static final EntityDataAccessor<Boolean> SITTING =
-            SynchedEntityData.defineId(DireKnightEntity.class, EntityDataSerializers.BOOLEAN);
-
     public DireKnightEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
     }
@@ -64,8 +61,8 @@ public class DireKnightEntity extends Monster implements IAnimatable {
         return Monster.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 60D)
                 .add(Attributes.ATTACK_DAMAGE, 8.0f)
-                .add(Attributes.ATTACK_SPEED, 0.3f)
-                .add(Attributes.MOVEMENT_SPEED, 0.5f).build();
+                .add(Attributes.ATTACK_SPEED, 0.5f)
+                .add(Attributes.MOVEMENT_SPEED, 0.15f).build();
     }
 
     protected void registerGoals() {
@@ -81,7 +78,7 @@ public class DireKnightEntity extends Monster implements IAnimatable {
     }
 
     public static boolean checkDireKnightSpawnRules(EntityType<? extends Monster> p_27578_, LevelAccessor p_27579_, MobSpawnType p_27580_, BlockPos p_27581_, Random p_27582_) {
-        return !p_27579_.getBlockState(p_27581_.below()).is(Blocks.AIR);
+        return p_27579_.getDifficulty() != Difficulty.PEACEFUL && !p_27579_.getBlockState(p_27581_.below()).is(Blocks.AIR);
     }
 
     protected void populateDefaultEquipmentSlots(DifficultyInstance p_34172_) {

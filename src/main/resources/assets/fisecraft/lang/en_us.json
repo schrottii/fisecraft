@@ -25,9 +25,20 @@
   "item.fisecraft.root_boots": "Root Boots",
 
   "item.fisecraft.dire_pain_sword": "Dire Pain Sword",
+  "item.fisecraft.dire_shard": "Dire Shard",
+  "item.fisecraft.direrer": "Direrer",
+
+  "item.fisecraft.glass_shard": "Glass Shard",
+  "item.fisecraft.glass_shard_golden": "Glass Shard (Golden)",
+  "item.fisecraft.hourglass_idol": "Hourglass Idol",
+  "item.fisecraft.funny_hourglass": "Funny Hourglass",
+
+  "item.fisecraft.endfise": "Endfise",
 
   "item.fisecraft.rootglass_spawn_egg": "Rootglass Spawn Egg",
   "item.fisecraft.direknight_spawn_egg": "Dire Knight Spawn Egg",
+  "item.fisecraft.endeye_spawn_egg": "EndEyE Spawn Egg",
+  "item.fisecraft.rootguardian_spawn_egg": "Rootguardian Spawn Egg",
 
 
 
@@ -60,6 +71,12 @@
   "block.fisecraft.airplane_block": "Airplane Block",
   "block.fisecraft.aloee": "Aloee",
   "block.fisecraft.aloee_block": "Aloee Block",
+  "block.fisecraft.pain_block": "Pain Block",
+  "block.fisecraft.hate_block": "Hate Block",
+  "block.fisecraft.pain_block_painless": "Pain Block (Painless)",
+  "block.fisecraft.hate_block_hateless": "Hate Block (Hateless)",
+  "block.fisecraft.glassy_sand": "Glassy Sand",
+  "block.fisecraft.rootguardian_trophy": "Rootguardian Trophy",
 
   "block.fisecraft.kremelo_plant": "Kremelo Plant",
   "block.fisecraft.kremelo_block": "Kremelo Block",
@@ -81,5 +98,7 @@
 
 
   "entity.fisecraft.rootglass": "Rootglass",
-  "entity.fisecraft.direknight": "Dire Knight"
+  "entity.fisecraft.direknight": "Dire Knight",
+  "entity.fisecraft.endeye": "EndEyE",
+  "entity.fisecraft.rootguardian": "Rootguardian"
 }

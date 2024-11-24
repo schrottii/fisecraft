@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "fisecraft:rootguardian_trophy"
+  },
+  "result": "minecraft:gold_block",
+  "experience": 2.0,
+  "cookingtime": 250
+}

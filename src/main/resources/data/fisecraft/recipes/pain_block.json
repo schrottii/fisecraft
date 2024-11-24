@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "XEX",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:netherrack"
+    },
+    "E": {
+      "item": "fisecraft:dire_shard"
+    }
+  },
+  "result": {
+    "item": "fisecraft:pain_block",
+    "count": 4
+  }
+}

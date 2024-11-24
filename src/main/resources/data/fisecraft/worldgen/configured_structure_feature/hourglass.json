@@ -5,7 +5,7 @@
     "size": 1
   },
   "biomes": "#fisecraft:has_structure/hourglass_biomes",
-  "adapt_noise": false,
+  "adapt_noise": true,
   "spawn_overrides": {
     "monster": {
       "bounding_box": "piece",

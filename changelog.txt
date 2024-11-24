@@ -1,5 +1,5 @@
 -----------------------------------------
-v1.0   2024-??-??
+v1.0   2024-07-11
 
 == Release ==
 -> Blocks:
@@ -70,30 +70,70 @@ v1.0   2024-??-??
 
 
 -----------------------------------------
-v1.1   2024-??-??
+v1.1   2024-09-07
 
-== NAME ==
+== v1.1: It's Alive ==
+-> Important:
+- Fisecraft now requires the GeckoLib mod as a dependency, put it in the mods folder like other libraries
+- This update adds the mod's first new mobs and structures
+
 -> Mobs:
-- 2 new mobs
+- 4 new mobs
 - Rootglass: Emotionless creature. Spawns in dry places, low health, can be tamed with Roots, can be bred with Clocks, can be killed for Roots and Sand/Glass
 - Dire Knight: Brutal killer. Spawns in the Nether, rarely, mini boss
+- Endeye: Watching flight. Spawns in the End
+- Rootguardian: Boss of roots. Summoned with an Hourglass Idol, or rarely when murdering his children
 
 -> Structures:
 - 2 new structures
-- Flying Beam: Spawns in the End, little flying beam that can contain an iron block or diamond block
+- Flying Beam: Spawns in the End, little flying beam that can contain an iron block or diamond block. Endeye spawn here
 - Hourglass: Spawns in dry places, built of root blocks, sand and glass. Home of the Rootglass
 
 -> Blocks:
-- 0 new blocks
+- 5 new blocks (33 total)
+- Pain Block: Crafted from a Dire Shard and Netherrack, damages entities
+- Hate Block: Gained by smelting a Pain Block, same effect
+- Pain Block (Painless), does not damage
+- Hate Block (Hateless), does not damage
+- Glassy Sand, generates in Hourglass structures
 
 -> Items:
-- 2 new items
+- 13 new items (33 total)
 - Rootglass Spawn Egg
 - Dire Knight Spawn Egg
+- Endeye Spawn Egg
+- Rootguardian Spawn Egg
+
 - Dire Pain Sword: Deals high damage and wither effect
+- Dire Shard: Used to craft the Dire Pain Sword
+- Direrer: Used to mine blocks made from Dire Shards
+
+- Glass Shard, drops from Glassy Sand but also when mining normal Glass without Silk Touch
+- Glass Shard (Golden), drops from Glassy Sand
+- Hourglass Idol, crafted, summons the Rootguardian boss
+- Funny Hourglass, dropped by Rootguardian, can be used infinitely
+- Rootguardian Trophy, dropped by Rootguardian, decorational item
+
+- Endfise, drops from Endeye
 
 -> Recipes:
-- 0 new recipes
+- 13 new recipes (78 total)
+- Dire Pain Sword
+- Direrer
+- Pain Block (2x), Hate Block (2x), Pain Block (Painless), Hate Block (Hateless)
+- Glass, Hourglass Idol, Gold Block
+- Ender Pearl, End Stone
 
 -> Other:
+- Glass now drops Glass Shards when mined without Silk Touch
 - Fixed single root blocks bug
+
+
+
+-----------------------------------------
+v1.2   2024-11-
+
+- Updated models of the Rootguardian and Endeye
+- The Rootguardian Trophy is now a block and can be placed!
+- blocks: 33 -> 34, items: 33 -> 32
+- Endeyes now despawn when changing to peaceful

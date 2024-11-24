@@ -2,9 +2,7 @@ package com.schrottii.fisecraft.blocks;
 
 import com.schrottii.fisecraft.Fisecraft;
 import com.schrottii.fisecraft.ModCreativeTab;
-import com.schrottii.fisecraft.blocks.custom.AirplaneBlock;
-import com.schrottii.fisecraft.blocks.custom.CustomFlowerBlock;
-import com.schrottii.fisecraft.blocks.custom.KremeloPlantBlock;
+import com.schrottii.fisecraft.blocks.custom.*;
 import com.schrottii.fisecraft.items.ModItems;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
@@ -13,13 +11,13 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
@@ -109,6 +107,23 @@ public class ModBlocks {
     public static final RegistryObject<Block> LUCKY_COLOR_BLOCK = registerBlock("lucky_color_block",
             () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f)));
 */
+
+    public static final RegistryObject<Block> PAIN_BLOCK = registerBlock("pain_block",
+            () -> new PainBlock(Block.Properties.of(Material.MOSS).strength(3.0f, 400f)));
+    public static final RegistryObject<Block> HATE_BLOCK = registerBlock("hate_block",
+            () -> new PainBlock(Block.Properties.of(Material.MOSS).strength(3.0f, 400f)));
+    public static final RegistryObject<Block> PAIN_BLOCK_PAINLESS = registerBlock("pain_block_painless",
+            () -> new Block(Block.Properties.of(Material.MOSS).strength(1.0f, 400f)));
+    public static final RegistryObject<Block> HATE_BLOCK_HATELESS = registerBlock("hate_block_hateless",
+            () -> new Block(Block.Properties.of(Material.MOSS).strength(1.0f, 400f)));
+    public static final RegistryObject<Block> GLASSY_SAND = registerBlock("glassy_sand",
+            () -> new SandBlock(14406560, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.SAND).strength(0.5F).sound(SoundType.SAND)));
+
+    public static final RegistryObject<Block> ROOTGUARDIAN_TROPHY = registerBlock("rootguardian_trophy",
+            () -> new TrophyBlock(Block.Properties.of(Material.STONE).strength(1.0f, 400f).noOcclusion()));
+
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

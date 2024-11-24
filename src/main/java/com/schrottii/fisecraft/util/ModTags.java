@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> ROOTGLASS_SPAWNABLE_ON = tag("rootglass_spawnable_on");
+        public static final TagKey<Block> MINEABLE_WITH_DIRERER = tag("mineable/direrer");
 
         static {
             // Static block to ensure tags are registered

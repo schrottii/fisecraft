@@ -13,20 +13,12 @@
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1.0,
-                "max": 3.0
+                "max": 1.0
               },
               "add": false
-            },
-            {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 0.0,
-                "max": 1.0
-              }
             }
           ],
-          "name": "fisecraft:root"
+          "name": "fisecraft:dire_shard"
         }
       ]
     },
@@ -69,7 +61,7 @@
               }
             }
           ],
-          "name": "minecraft:sand"
+          "name": "minecraft:netherrack"
         }
       ]
     }

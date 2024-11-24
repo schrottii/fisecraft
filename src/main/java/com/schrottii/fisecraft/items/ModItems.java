@@ -98,16 +98,40 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)
                     .food(new FoodProperties.Builder().fast().nutrition(4).saturationMod(4).build())));
 
+    // updateWhenNewEntity
     public static final RegistryObject<Item> ROOTGLASS_SPAWN_EGG = ITEMS.register("rootglass_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.ROOTGLASS,0x74655C, 0xE2B57D,
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
     public static final RegistryObject<Item> DIREKNIGHT_SPAWN_EGG = ITEMS.register("direknight_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.DIREKNIGHT,0x1D0700, 0x850808,
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> ENDEYE_SPAWN_EGG = ITEMS.register("endeye_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.ENDEYE,0x7E3F78, 0x6C2139,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> ROOTGUARDIAN_SPAWN_EGG = ITEMS.register("rootguardian_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.ROOTGUARDIAN,0x74655C, 0xE01818,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
 
     public static final RegistryObject<Item> DIRE_PAIN_SWORD = ITEMS.register("dire_pain_sword",
             () -> new DirePainSwordItem(Tiers.DIAMOND, 4, -3f,
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> DIRE_SHARD = ITEMS.register("dire_shard",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> DIRERER = ITEMS.register("direrer",
+            () -> new DirererItem(ModTiers.DIRE, 3, -2.8f,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+
+    public static final RegistryObject<Item> GLASS_SHARD = ITEMS.register("glass_shard",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> GLASS_SHARD_GOLDEN = ITEMS.register("glass_shard_golden",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> HOURGLASS_IDOL = ITEMS.register("hourglass_idol",
+            () -> new HourglassIdolItem(new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> FUNNY_HOURGLASS = ITEMS.register("funny_hourglass",
+            () -> new HourglassFunnyItem(new Item.Properties().tab(ModCreativeTab.fisecraft)));
+
+    public static final RegistryObject<Item> ENDFISE = ITEMS.register("endfise",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)));
 
     @SubscribeEvent
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {

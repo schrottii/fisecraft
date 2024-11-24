@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RGR",
+    " D ",
+    "RGR"
+  ],
+  "key": {
+    "G": {
+      "item": "fisecraft:glass_shard_golden"
+    },
+    "R": {
+      "item": "fisecraft:block_of_roots"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "fisecraft:hourglass_idol",
+    "count": 1
+  }
+}
