@@ -23,7 +23,7 @@ public class HourglassFunnyItem extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
-            player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 20, 2));
+            player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 30, 1));
             player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 30, 3));
             player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3));
 

@@ -1,5 +1,6 @@
 package com.schrottii.fisecraft.blocks.custom;
 
+import com.schrottii.fisecraft.config.FisecraftCommonConfigs;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.TextComponent;
@@ -13,6 +14,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -36,21 +38,23 @@ public class AirplaneBlock extends Block {
             double z = player.getZ();
             String actualDirection = "";
 
+            double teleportAmount = FisecraftCommonConfigs.AIRPLANE_BLOCK_DISTANCE.get();
+
             switch (facing) {
                 case NORTH:
-                    z += 10000;
+                    z += teleportAmount;
                     actualDirection = "SOUTH";
                     break;
                 case SOUTH:
-                    z -= 10000;
+                    z -= teleportAmount;
                     actualDirection = "NORTH";
                     break;
                 case WEST:
-                    x += 10000;
+                    x += teleportAmount;
                     actualDirection = "EAST";
                     break;
                 case EAST:
-                    x -= 10000;
+                    x -= teleportAmount;
                     actualDirection = "WEST";
                     break;
                 default:
@@ -58,22 +62,27 @@ public class AirplaneBlock extends Block {
             }
 
             try {
-                player.setPos(x, player.getY(), z);
-                Thread.sleep(1000);  // 1 second delay
+                if (FisecraftCommonConfigs.AIRPLANE_BLOCK_DESTRUCTION.get()) {
+                    world.setBlock(new BlockPos(x, player.getY(), z), Blocks.AIR.defaultBlockState(), 3);
+                    world.setBlock(new BlockPos(x, player.getY() + 1, z), Blocks.AIR.defaultBlockState(), 3);
+                }
+
+                player.teleportTo(x, player.getY(), z);
+                Thread.sleep(500);  // 0.5 second delay
+
+                if (player.getX() == x && player.getZ() == z) {
+                    player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100, 9));
+                    player.sendMessage(new TextComponent("Taking off! Direction: " + actualDirection), player.getUUID());
+
+                    player.setPos(x, player.getY(), z);
+                    held.shrink(1);
+                }
+                else {
+                   player.sendMessage(new TextComponent("Teleportation failed. Please try again."), player.getUUID());
+                }
             }
             catch (InterruptedException interruptedException) {
 
-            }
-
-            if (player.getX() == x && player.getZ() == z) {
-                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100, 9));
-                player.sendMessage(new TextComponent("Taking off! Direction: " + actualDirection), player.getUUID());
-
-                player.setPos(x, player.getY(), z);
-                held.shrink(1);
-            }
-            else {
-                player.sendMessage(new TextComponent("Teleportation failed. Please try again."), player.getUUID());
             }
 
             return InteractionResult.CONSUME;

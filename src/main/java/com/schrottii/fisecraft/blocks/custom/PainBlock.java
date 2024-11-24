@@ -1,5 +1,6 @@
 package com.schrottii.fisecraft.blocks.custom;
 
+import com.schrottii.fisecraft.config.FisecraftCommonConfigs;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
@@ -15,8 +16,8 @@ public class PainBlock extends Block {
 
     @Override
     public void stepOn(Level world, BlockPos pos, BlockState state, Entity entity) {
-        // Check if the entity is alive and not in creative mode
-        if (entity instanceof LivingEntity && !entity.isInvulnerableTo(DamageSource.WITHER)) {
+        // Check if the entity is alive and not in creative mode and config
+        if (entity instanceof LivingEntity && !entity.isInvulnerableTo(DamageSource.WITHER) && FisecraftCommonConfigs.PAIN_BLOCK_DAMAGE.get()) {
             entity.hurt(DamageSource.WITHER, 2.0F);
         }
         super.stepOn(world, pos, state, entity);

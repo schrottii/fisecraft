@@ -1,5 +1,6 @@
 package com.schrottii.fisecraft.entity.custom;
 
+import com.schrottii.fisecraft.config.FisecraftCommonConfigs;
 import com.schrottii.fisecraft.items.ModItems;
 import com.schrottii.fisecraft.entity.ModEntityTypes;
 
@@ -96,9 +97,9 @@ public class RootglassEntity extends TamableAnimal implements IAnimatable {
     public void die(DamageSource source) {
         super.die(source);
 
-        if (!this.level.isClientSide) {
+        if (!this.level.isClientSide && FisecraftCommonConfigs.RANDOM_ROOTGUARDIAN_SPAWN.get() == true) {
             Random random = new Random();
-            if (random.nextDouble() < 0.01) { // 1% chance
+            if (random.nextDouble() < 0.01 * FisecraftCommonConfigs.RANDOM_ROOTGUARDIAN_CHANCE.get()) { // 1% chance
                 ServerLevel serverLevel = (ServerLevel) this.level;
                 ModEntityTypes.ROOTGUARDIAN.get().spawn(serverLevel, null, (Player)null, this.blockPosition(), MobSpawnType.TRIGGERED, true, false);
             }

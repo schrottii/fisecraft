@@ -62,7 +62,6 @@ import software.bernie.geckolib3.GeckoLib;
 import net.minecraftforge.fml.ModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.schrottii.fisecraft.conditions.GappleCondition;
 
 import java.util.stream.Collectors;
 

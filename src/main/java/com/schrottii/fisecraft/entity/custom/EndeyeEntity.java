@@ -1,5 +1,6 @@
 package com.schrottii.fisecraft.entity.custom;
 
+import com.schrottii.fisecraft.config.FisecraftCommonConfigs;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -123,7 +124,7 @@ public class EndeyeEntity extends FlyingMob implements IAnimatable {
         }
 
         public boolean canUse() {
-            return this.eye.getTarget() != null;
+            return this.eye.getTarget() != null && FisecraftCommonConfigs.ENDEYE_SHOOT.get() == true;
         }
 
         public void start() {

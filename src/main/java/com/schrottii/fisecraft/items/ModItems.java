@@ -38,9 +38,9 @@ public class ModItems {
     public static final RegistryObject<Item> ROOT = ITEMS.register("root",
             () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)
                     .food(new FoodProperties.Builder().nutrition(1).saturationMod(0)
-                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 3000, 0), 0.5F)
-                            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3000, 2), 1.0F)
-                            .effect(() -> new MobEffectInstance(MobEffects.POISON, 3000, 4), 1.0F).build())));
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1500, 0), 0.5F)
+                            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1500, 2), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.POISON, 1500, 4), 1.0F).build())));
 
     public static final RegistryObject<Item> ESCAPELEVATOR = ITEMS.register("escapelevator",
             () -> new ElevatorItem(new Item.Properties().tab(ModCreativeTab.fisecraft).stacksTo(1)));
@@ -113,7 +113,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
 
     public static final RegistryObject<Item> DIRE_PAIN_SWORD = ITEMS.register("dire_pain_sword",
-            () -> new DirePainSwordItem(Tiers.DIAMOND, 4, -3f,
+            () -> new DirePainSwordItem(Tiers.DIAMOND, 4, -3.2f,
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
     public static final RegistryObject<Item> DIRE_SHARD = ITEMS.register("dire_shard",
             () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)));
