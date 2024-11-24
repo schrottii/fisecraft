@@ -70,7 +70,7 @@
   "block.fisecraft.layered_block_of_iron": "Layered Block of Iron",
   "block.fisecraft.airplane_block": "Airplane Block",
   "block.fisecraft.aloee": "Aloee",
-  "block.fisecraft.aloee_block": "Aloee Block",
+  "block.fisecraft.aloee_block": "Block of Aloee",
   "block.fisecraft.pain_block": "Pain Block",
   "block.fisecraft.hate_block": "Hate Block",
   "block.fisecraft.pain_block_painless": "Pain Block (Painless)",
@@ -79,8 +79,11 @@
   "block.fisecraft.rootguardian_trophy": "Rootguardian Trophy",
 
   "block.fisecraft.kremelo_plant": "Kremelo Plant",
-  "block.fisecraft.kremelo_block": "Kremelo Block",
+  "block.fisecraft.kremelo_block": "Block of Kremelo",
   "block.fisecraft.kremelo_block_smooth": "Smooth Kremelo Block",
+
+  "block.fisecraft.block_of_endfise": "Block of Endfise",
+  "block.fisecraft.endfise_stone": "Endfise Stone",
 
 
 

@@ -122,6 +122,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> ROOTGUARDIAN_TROPHY = registerBlock("rootguardian_trophy",
             () -> new TrophyBlock(Block.Properties.of(Material.STONE).strength(1.0f, 400f).noOcclusion()));
 
+    public static final RegistryObject<Block> BLOCK_OF_ENDFISE = registerBlock("block_of_endfise",
+            () -> new Block(Block.Properties.of(Material.PLANT).strength(0.3f, 2f)));
+    public static final RegistryObject<Block> ENDFISE_STONE = registerBlock("endfise_stone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND).requiresCorrectToolForDrops().strength(3.0F, 9.0F)));
+
 
 
 

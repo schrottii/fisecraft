@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FF ",
+    "FF ",
+    "   "
+  ],
+  "key": {
+    "F": {
+      "item": "fisecraft:endfise"
+    }
+  },
+  "result": {
+    "item": "fisecraft:block_of_endfise",
+    "count": 1
+  }
+}
