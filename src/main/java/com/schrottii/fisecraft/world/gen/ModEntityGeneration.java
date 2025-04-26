@@ -18,7 +18,7 @@ public class ModEntityGeneration {
     public static void onEntitySpawn(final BiomeLoadingEvent event) {
         // updateWhenNewEntity
         addEntityToSpecificBiomes(event, ModEntityTypes.ROOTGLASS.get(),
-                2, 2, 4, Biomes.DESERT, Biomes.BADLANDS, Biomes.PLAINS);
+                2, 2, 4, Biomes.DESERT, Biomes.BADLANDS);
         addEntityToSpecificBiomes(event, ModEntityTypes.DIREKNIGHT.get(),
                 1, 1, 2, Biomes.SOUL_SAND_VALLEY, Biomes.BASALT_DELTAS);
         addEntityToSpecificBiomes(event, ModEntityTypes.ENDEYE.get(),

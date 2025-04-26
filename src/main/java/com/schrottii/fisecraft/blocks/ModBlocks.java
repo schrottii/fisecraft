@@ -4,6 +4,7 @@ import com.schrottii.fisecraft.Fisecraft;
 import com.schrottii.fisecraft.ModCreativeTab;
 import com.schrottii.fisecraft.blocks.custom.*;
 import com.schrottii.fisecraft.items.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.*;
@@ -103,6 +104,13 @@ public class ModBlocks {
             () -> new Block(Block.Properties.of(Material.PLANT).strength(0.3f, 1200f)));
     public static final RegistryObject<Block> KREMELO_BLOCK_SMOOTH = registerBlock("kremelo_block_smooth",
             () -> new Block(Block.Properties.of(Material.PLANT).strength(0.3f, 1200f)));
+
+    public static final RegistryObject<Block> AVYRYA_PLANT = registerBlockWithoutBlockItem("avyrya_plant",
+            () -> new AvyryaPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+    public static final RegistryObject<Block> AVYRYA_BLOCK = registerBlock("avyrya_block",
+            () -> new Block(Block.Properties.of(Material.PLANT).strength(0.3f, 1200f)));
+    public static final RegistryObject<Block> AVYRYA_BLOCK_SMOOTH = registerBlock("avyrya_block_smooth",
+            () -> new Block(Block.Properties.of(Material.PLANT).strength(0.3f, 1200f)));
     /*
     public static final RegistryObject<Block> LUCKY_COLOR_BLOCK = registerBlock("lucky_color_block",
             () -> new Block(Block.Properties.of(Material.STONE).strength(2f, 1200f)));
@@ -126,6 +134,16 @@ public class ModBlocks {
             () -> new Block(Block.Properties.of(Material.PLANT).strength(0.3f, 2f)));
     public static final RegistryObject<Block> ENDFISE_STONE = registerBlock("endfise_stone",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND).requiresCorrectToolForDrops().strength(3.0F, 9.0F)));
+
+    public static final RegistryObject<Block> ZERULL_ORE = registerBlock("zerull_ore",
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(12.0F, 3.0F), UniformInt.of(12, 16)));
+    public static final RegistryObject<Block> ZERULL_ORE_DEEPSLATE = registerBlock("zerull_ore_deepslate",
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(12.0F, 3.0F), UniformInt.of(12, 16)));
+    public static final RegistryObject<Block> BLOCK_OF_ZERULL = registerBlock("block_of_zerull",
+            () -> new Block(Block.Properties.of(Material.PLANT).strength(6f, 20f)));
+
+
+
 
 
 

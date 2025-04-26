@@ -11,8 +11,11 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    ROOT("root", 3, new int[]{2, 5, 6, 5}, 40, SoundEvents.ARMOR_EQUIP_LEATHER,
-            0F, 0.05F, () -> Ingredient.of(ModItems.ROOT.get()));
+    ROOT("root", 3, new int[]{2, 5, 6, 5}, 80, SoundEvents.ARMOR_EQUIP_LEATHER,
+            0F, 0, () -> Ingredient.of(ModItems.ROOT.get())),
+
+    ZERULL("zerull", 18, new int[]{2, 6, 8, 4}, 80, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            0F, 0, () -> Ingredient.of(ModItems.ZERULL_INGOT.get()));
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;

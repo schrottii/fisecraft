@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "PPP",
-    "AAS",
-    "PPP"
+    "PP ",
+    "AA ",
+    "   "
   ],
   "key": {
     "P": {
@@ -11,9 +11,6 @@
     },
     "A": {
       "item": "fisecraft:aloee_vera"
-    },
-    "S": {
-      "item": "minecraft:string"
     }
   },
   "result": {

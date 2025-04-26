@@ -161,3 +161,55 @@ v1.2   2024-11-24
 - Added recipes for Block of Endfise and Endfise Stone
 - The Rootguardian Trophy is now a block and can be placed!
 - Total blocks: 33 -> 36, total items: 33 -> 32, total recipes: 78 -> 80
+
+
+
+-----------------------------------------
+v1.3   2025-04-26
+
+== v1.3: New Power Update ==
+-> Rootguardian:
+- Added two special attacks, that each have a 10% chance of happening every second
+- Special Sand Attack: Drops a Sand Block on your head, dealing 5-20 damage, and slows you down
+- Lightning Attack: Summons Lightning, dealing 5 damage, burns, and slows you down
+- Increased movement speed by 25%
+- Boss bar now says Rootguardian instead of Root Guardian
+
+-> Blocks:
+- 6 new blocks (42 total)
+- Avyrya Crop
+- Block of Avyrya: crafted with 9 Avyrya
+- Smooth Avyrya Block: smelting
+- (Deepslate) Zerull Ore: rare ore that spawns at Y=0
+- Block of Zerull: crafted with 9 Zerull
+
+-> Items:
+- 15 new items (47 total)
+- Avyrya Seeds: crafted with wheat seeds, root, chicken, milk bucket, blue dye and purple dye
+- Avyrya: new plant similar to Kremelo
+- Avyrya Soup: same as Kremelo soup
+- Avyrya Nugget: crafted with 4 Avyrya and 1 Chicken, high saturation
+- Raw Zerull
+- Zerull Ingot
+- Zerull Axe, Hoe, Pickaxe, Shovel, Sword, Boots, Leggings, Chestplate, Helmet
+
+-> Recipes:
+- 20 new recipes (100 total)
+- Avyrya Block
+- Avyrya Nugget
+- Avyrya Seeds
+- Avyrya Soup
+- Smooth Avyrya Block (smelting)
+- Zerull Ingot (4x)
+- Block of Zerull (and back)
+- Zerull Axe, Hoe, Pickaxe, Shovel, Sword, Boots, Leggings, Chestplate, Helmet
+
+-> Changes:
+- Doubled base durability of Root tools/armor (16 -> 32), but reduced damage by 1
+- Funny Hourglass: Extended resistance duration by 50% (to prevent fall damage on normal use), but increased cooldown by 20%
+- Rootglass can no longer spawn in Plains
+- Changed Bandage recipe from 6 paper, 2 aloee, 1 string to 2 paper, 2 aloee
+- Reduced Root Axe damage from 9 to 6 (same as Sword)
+- Removed knockback resistance from Root armor
+- Improved Root generation
+- Total blocks: 36 -> 42, items: 32 -> 47, recipes: 80 -> 100

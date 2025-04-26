@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "KKK",
+    "KKK",
+    "KKK"
+  ],
+  "key": {
+    "K": {
+      "item": "fisecraft:avyrya"
+    }
+  },
+  "result": {
+    "item": "fisecraft:avyrya_block",
+    "count": 1
+  }
+}

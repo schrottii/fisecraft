@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "zerull_ingot",
+  "ingredient": {
+    "item": "fisecraft:raw_zerull"
+  },
+  "result": "fisecraft:zerull_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

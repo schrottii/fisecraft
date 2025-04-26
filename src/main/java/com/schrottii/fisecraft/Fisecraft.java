@@ -107,23 +107,8 @@ public class Fisecraft
     }
 
     private void clientSetup (final FMLClientSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SHADOWFLOWER.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHTFLOWER.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ROOTS.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ALOEE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.KREMELO_PLANT.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SMOOTH_ROOT_DOOR.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SMOOTH_ROOT_TRAPDOOR.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ROOTGUARDIAN_TROPHY.get(), RenderType.cutout());
-
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ROOT_DOOR.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ROOT_TRAPDOOR.get(), RenderType.translucent());
-
-        // updateWhenNewEntity
-        EntityRenderers.register(ModEntityTypes.ROOTGLASS.get(), RootglassRenderer::new);
-        EntityRenderers.register(ModEntityTypes.DIREKNIGHT.get(), DireKnightRenderer::new);
-        EntityRenderers.register(ModEntityTypes.ENDEYE.get(), EndeyeRenderer::new);
-        EntityRenderers.register(ModEntityTypes.ROOTGUARDIAN.get(), RootguardianRenderer::new);
+        SetupRenders.BlockRenders();
+        SetupRenders.EntityRenders();
     }
 
     private void setup(final FMLCommonSetupEvent event)

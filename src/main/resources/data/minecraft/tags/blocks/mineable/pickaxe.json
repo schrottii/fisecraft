@@ -20,6 +20,10 @@
     "fisecraft:smooth_root_trapdoor",
 
     "fisecraft:airplane_block",
-    "fisecraft:endfise_stone"
+    "fisecraft:endfise_stone",
+
+    "fisecraft:zerull_ore",
+    "fisecraft:zerull_ore_deepslate",
+    "fisecraft:block_of_zerull"
   ]
 }

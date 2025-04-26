@@ -14,6 +14,11 @@
   "item.fisecraft.kremelo_soup": "Kremelo Soup",
   "item.fisecraft.kremelo_sticks": "Kremelo Sticks",
 
+  "item.fisecraft.avyrya_seeds": "Avyrya Seeds",
+  "item.fisecraft.avyrya": "Avyrya",
+  "item.fisecraft.avyrya_soup": "Avyrya Soup",
+  "item.fisecraft.avyrya_nugget": "Avyrya Nugget",
+
   "item.fisecraft.root_pickaxe": "Root Pickaxe",
   "item.fisecraft.root_axe": "Root Axe",
   "item.fisecraft.root_shovel": "Root Shovel",
@@ -39,6 +44,18 @@
   "item.fisecraft.direknight_spawn_egg": "Dire Knight Spawn Egg",
   "item.fisecraft.endeye_spawn_egg": "EndEyE Spawn Egg",
   "item.fisecraft.rootguardian_spawn_egg": "Rootguardian Spawn Egg",
+
+  "item.fisecraft.raw_zerull": "Raw Zerull",
+  "item.fisecraft.zerull_ingot": "Zerull Ingot",
+  "item.fisecraft.zerull_pickaxe": "Zerull Pickaxe",
+  "item.fisecraft.zerull_axe": "Zerull Axe",
+  "item.fisecraft.zerull_shovel": "Zerull Shovel",
+  "item.fisecraft.zerull_hoe": "Zerull Hoe",
+  "item.fisecraft.zerull_sword": "Zerull Sword",
+  "item.fisecraft.zerull_boots": "Zerull Boots",
+  "item.fisecraft.zerull_leggings": "Zerull Leggings",
+  "item.fisecraft.zerull_chestplate": "Zerull Chestplate",
+  "item.fisecraft.zerull_helmet": "Zerull Helmet",
 
 
 
@@ -82,8 +99,16 @@
   "block.fisecraft.kremelo_block": "Block of Kremelo",
   "block.fisecraft.kremelo_block_smooth": "Smooth Kremelo Block",
 
+  "block.fisecraft.avyrya_plant": "Avyrya Plant",
+  "block.fisecraft.avyrya_block": "Block of Avyrya",
+  "block.fisecraft.avyrya_block_smooth": "Smooth Avyrya Block",
+
   "block.fisecraft.block_of_endfise": "Block of Endfise",
   "block.fisecraft.endfise_stone": "Endfise Stone",
+
+  "block.fisecraft.zerull_ore": "Zerull Ore",
+  "block.fisecraft.zerull_ore_deepslate": "Deepslate Zerull Ore",
+  "block.fisecraft.block_of_zerull": "Block of Zerull",
 
 
 

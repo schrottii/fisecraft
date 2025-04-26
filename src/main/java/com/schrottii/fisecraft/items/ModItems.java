@@ -59,16 +59,16 @@ public class ModItems {
                             .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 0), 1.0F).build())));
 
     public static final RegistryObject<Item> ROOT_SWORD = ITEMS.register("root_sword",
-            () -> new RootSwordItem(ModTiers.ROOT, 5, -2.4f,
+            () -> new RootSwordItem(ModTiers.ROOT, 4, -2.4f,
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
     public static final RegistryObject<Item> ROOT_PICKAXE = ITEMS.register("root_pickaxe",
-            () -> new PickaxeItem(ModTiers.ROOT, 3, -2.8f,
+            () -> new PickaxeItem(ModTiers.ROOT, 2, -2.8f,
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
     public static final RegistryObject<Item> ROOT_SHOVEL = ITEMS.register("root_shovel",
-            () -> new ShovelItem(ModTiers.ROOT, 3.5f, -3,
+            () -> new ShovelItem(ModTiers.ROOT, 2.5f, -3,
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
     public static final RegistryObject<Item> ROOT_AXE = ITEMS.register("root_axe",
-            () -> new AxeItem(ModTiers.ROOT, 8, -3.1f,
+            () -> new AxeItem(ModTiers.ROOT, 4, -3.1f,
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
     public static final RegistryObject<Item> ROOT_HOE = ITEMS.register("root_hoe",
             () -> new HoeItem(ModTiers.ROOT, -1, -1,
@@ -97,6 +97,17 @@ public class ModItems {
     public static final RegistryObject<Item> KREMELO_STICKS = ITEMS.register("kremelo_sticks",
             () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)
                     .food(new FoodProperties.Builder().fast().nutrition(4).saturationMod(4).build())));
+
+    public static final RegistryObject<Item> AVYRYA = ITEMS.register("avyrya",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> AVYRYA_SEEDS = ITEMS.register("avyrya_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.AVYRYA_PLANT.get(), new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> AVYRYA_SOUP = ITEMS.register("avyrya_soup",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft).stacksTo(1)
+                    .food(new FoodProperties.Builder().nutrition(6).saturationMod(7.2f).build())));
+    public static final RegistryObject<Item> AVYRYA_NUGGET = ITEMS.register("avyrya_nugget",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)
+                    .food(new FoodProperties.Builder().nutrition(4).saturationMod(8).build())));
 
     // updateWhenNewEntity
     public static final RegistryObject<Item> ROOTGLASS_SPAWN_EGG = ITEMS.register("rootglass_spawn_egg",
@@ -132,6 +143,39 @@ public class ModItems {
 
     public static final RegistryObject<Item> ENDFISE = ITEMS.register("endfise",
             () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)));
+
+    public static final RegistryObject<Item> RAW_ZERULL = ITEMS.register("raw_zerull",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> ZERULL_INGOT = ITEMS.register("zerull_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)));
+
+    public static final RegistryObject<Item> ZERULL_SWORD = ITEMS.register("zerull_sword",
+            () -> new RootSwordItem(ModTiers.ZERULL, 4, -2.4f,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> ZERULL_PICKAXE = ITEMS.register("zerull_pickaxe",
+            () -> new PickaxeItem(ModTiers.ZERULL, 2, -2.8f,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> ZERULL_SHOVEL = ITEMS.register("zerull_shovel",
+            () -> new ShovelItem(ModTiers.ZERULL, 2.5f, -3,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> ZERULL_AXE = ITEMS.register("zerull_axe",
+            () -> new AxeItem(ModTiers.ZERULL, 4, -3.1f,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> ZERULL_HOE = ITEMS.register("zerull_hoe",
+            () -> new HoeItem(ModTiers.ZERULL, -1, -1,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> ZERULL_HELMET = ITEMS.register("zerull_helmet",
+            () -> new ArmorItem(ModArmorMaterials.ZERULL, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> ZERULL_CHESTPLATE = ITEMS.register("zerull_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ZERULL, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> ZERULL_LEGGINGS = ITEMS.register("zerull_leggings",
+            () -> new ArmorItem(ModArmorMaterials.ZERULL, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
+    public static final RegistryObject<Item> ZERULL_BOOTS = ITEMS.register("zerull_boots",
+            () -> new ArmorItem(ModArmorMaterials.ZERULL, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeTab.fisecraft)));
 
     @SubscribeEvent
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {

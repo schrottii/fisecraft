@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZZZ",
+    "Z Z",
+    "   "
+  ],
+  "key": {
+    "Z": {
+      "item": "fisecraft:zerull_ingot"
+    }
+  },
+  "result": {
+    "item": "fisecraft:zerull_helmet",
+    "count": 1
+  }
+}

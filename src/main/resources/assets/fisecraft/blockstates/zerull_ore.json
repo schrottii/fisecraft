@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "fisecraft:block/zerull_ore"
+      },
+      {
+        "model": "fisecraft:block/zerull_ore",
+        "y": 90
+      },
+      {
+        "model": "fisecraft:block/zerull_ore",
+        "y": 180
+      },
+      {
+        "model": "fisecraft:block/zerull_ore",
+        "y": 270
+      }
+    ]
+  }
+}

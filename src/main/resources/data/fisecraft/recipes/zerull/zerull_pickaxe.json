@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZZZ",
+    " I ",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "Z": {
+      "item": "fisecraft:zerull_ingot"
+    }
+  },
+  "result": {
+    "item": "fisecraft:zerull_pickaxe",
+    "count": 1
+  }
+}

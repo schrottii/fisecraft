@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fisecraft:block_of_zerull"
+    }
+  ],
+  "result": {
+    "item": "fisecraft:zerull_ingot",
+    "count": 9
+  }
+}

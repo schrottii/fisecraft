@@ -3,6 +3,7 @@ package com.schrottii.fisecraft.world;
 import com.schrottii.fisecraft.Fisecraft;
 import com.schrottii.fisecraft.world.gen.ModEntityGeneration;
 import com.schrottii.fisecraft.world.gen.ModFlowerGeneration;
+import com.schrottii.fisecraft.world.gen.ModOreGeneration;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -14,6 +15,7 @@ import net.minecraftforge.server.ServerLifecycleHooks;
 public class ModWorldEvents {
     @SubscribeEvent
     public static void biomeLoadingEvent(final BiomeLoadingEvent event) {
+        ModOreGeneration.generateOres(event);
         ModFlowerGeneration.generateFlowers(event);
         ModEntityGeneration.onEntitySpawn(event);
     }

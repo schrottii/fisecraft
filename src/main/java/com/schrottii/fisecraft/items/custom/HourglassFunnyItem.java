@@ -25,10 +25,10 @@ public class HourglassFunnyItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
             player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 30, 1));
             player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 30, 3));
-            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3));
+            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 3));
 
             player.playSound(SoundEvents.ENDERMAN_TELEPORT, 1.0F, 1.0F);
-            player.getCooldowns().addCooldown(this, 100);
+            player.getCooldowns().addCooldown(this, 120);
 
             return super.use(world, player, hand);
     }
