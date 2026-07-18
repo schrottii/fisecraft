@@ -84,6 +84,7 @@ public class Fisecraft
         ModEnchantments.ENCHANTMENTS.register(modEventBus);
         ModEntityTypes.register(modEventBus);
         ModStructures.register(modEventBus);
+        ModSounds.SOUNDS.register(modEventBus);
 
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::clientSetup);

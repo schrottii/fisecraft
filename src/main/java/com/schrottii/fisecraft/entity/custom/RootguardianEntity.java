@@ -1,10 +1,14 @@
 package com.schrottii.fisecraft.entity.custom;
 
+import com.schrottii.fisecraft.entity.RootguardianMusic;
+import com.schrottii.fisecraft.ModSounds;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -52,6 +56,9 @@ public class RootguardianEntity extends Monster implements IAnimatable {
                 BossEvent.BossBarOverlay.PROGRESS
         );
         this.bossEvent.setVisible(true);
+
+        RootguardianMusic sound = new RootguardianMusic(this);
+        Minecraft.getInstance().getSoundManager().play(sound);
     }
 
     public static AttributeSupplier setAttributes() {
@@ -108,7 +115,7 @@ public class RootguardianEntity extends Monster implements IAnimatable {
                     );
                     sand.setHurtsEntities(5, 20);
                     sand.time = 1;
-                    this.level.addFreshEntity(sand);
+                    //this.level.addFreshEntity(sand);
                 }
             }
             else if (randy < 0.20f) { // 10% chance

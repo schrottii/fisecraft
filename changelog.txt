@@ -213,3 +213,17 @@ v1.3   2025-04-26
 - Removed knockback resistance from Root armor
 - Improved Root generation
 - Total blocks: 36 -> 42, items: 32 -> 47, recipes: 80 -> 100
+
+
+
+-----------------------------------------
+v1.4   2026-
+
+== v1.4:  ==
+-> Rootguardian:
+- Added boss music that plays during the fight!
+- Song name: The Guard of Time (unreleased so far)
+- Fixed Special Sand Attack issue
+
+-> Other:
+- Updated mod logo from the old logo to a low-res version of the new one

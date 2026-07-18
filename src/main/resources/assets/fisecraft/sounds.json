@@ -1,0 +1,11 @@
+{
+  "boss_music": {
+    "category": "music",
+    "subtitle": "boss_music.sub",
+    "sounds": [
+      {
+        "name": "fisecraft:music/the_guard_of_time"
+      }
+    ]
+  }
+}
