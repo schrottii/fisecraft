@@ -61,7 +61,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import software.bernie.geckolib3.GeckoLib;
 import net.minecraftforge.fml.ModLoadingContext;
 import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.util.stream.Collectors;
 
@@ -72,7 +71,7 @@ public class Fisecraft
 
     // Directly reference a slf4j logger
     public static final String MODID = "fisecraft";
-    public static final Logger LOGGER = LogManager.getLogger();
+    //public static final Logger LOGGER = LogManager.getLogger();
 
     public Fisecraft()
     {

@@ -59,8 +59,6 @@
 
 
 
-
-
   "block.fisecraft.shadowflower": "Shadowflower",
   "block.fisecraft.lightflower": "Lightflower",
   "block.fisecraft.shadowflower_lamp": "Shadowflower Lamp",
@@ -112,8 +110,6 @@
 
 
 
-
-
   "enchantment.fisecraft.elmending": "Elmending",
   "enchantment.fisecraft.elmending.desc": "Attacking mobs can sometimes drop a Root",
   "enchantment.fisecraft.curseroot": "Curse of the Root",
@@ -123,10 +119,12 @@
 
 
 
-
-
   "entity.fisecraft.rootglass": "Rootglass",
   "entity.fisecraft.direknight": "Dire Knight",
   "entity.fisecraft.endeye": "EndEyE",
-  "entity.fisecraft.rootguardian": "Rootguardian"
+  "entity.fisecraft.rootguardian": "Rootguardian",
+
+
+
+  "subtitles.fisecraft.boss_music": "Boss music is playing"
 }

@@ -1,7 +1,6 @@
------------------------------------------
-v1.0   2024-07-11
+# v1.0 - Release
+2024-07-11
 
-== Release ==
 -> Blocks:
 - 28 total blocks
 - Airplane Block: Can be crafted. Use paper to teleport 10k blocks in that direction
@@ -69,10 +68,9 @@ v1.0   2024-07-11
 
 
 
------------------------------------------
-v1.1   2024-09-07
+## v1.1 - It's Alive
+2024-09-07
 
-== v1.1: It's Alive ==
 -> Important:
 - Fisecraft now requires the GeckoLib mod as a dependency, put it in the mods folder like other libraries
 - This update adds the mod's first new mobs and structures
@@ -130,10 +128,9 @@ v1.1   2024-09-07
 
 
 
------------------------------------------
-v1.2   2024-11-24
+# v1.2 - Confiseg Update
+2024-11-24
 
-== v1.2: Confiseg Update ==
 -> Config:
 - Added a common config! Here you can configurate some things about Fisecraft:
 - Toggle Endeye shooting
@@ -164,10 +161,9 @@ v1.2   2024-11-24
 
 
 
------------------------------------------
-v1.3   2025-04-26
+## v1.3 - New Power Update
+2025-04-26
 
-== v1.3: New Power Update ==
 -> Rootguardian:
 - Added two special attacks, that each have a 10% chance of happening every second
 - Special Sand Attack: Drops a Sand Block on your head, dealing 5-20 damage, and slows you down
@@ -216,10 +212,9 @@ v1.3   2025-04-26
 
 
 
------------------------------------------
-v1.4   2026-
+## v1.4 - ?que?
+2026-
 
-== v1.4:  ==
 -> Rootguardian:
 - Added boss music that plays during the fight!
 - Song name: The Guard of Time (unreleased so far)
@@ -227,3 +222,4 @@ v1.4   2026-
 
 -> Other:
 - Updated mod logo from the old logo to a low-res version of the new one
+- Changed changelog.txt to PATCH_NOTES.md
