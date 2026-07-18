@@ -1,0 +1,15 @@
+{
+  "name": "Enderfruit",
+  "icon": "fisecraft:enderfruit",
+  "category": "fisecraft:mobility_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Eating this will teleport you a bit into the direction you're looking to"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:enderfruit"
+    }
+  ]
+}

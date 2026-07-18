@@ -5,7 +5,12 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "This is a test entry, but it should show up!"
+      "text": "This block is supposed to simulate travelling with a plane. Place it anywhere in the world, right click it with a piece of paper, and you will go 10,000 blocks in that direction! It does NOT care if your destination is safe, but you get two, so you can directly build a route back!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:layered_block_of_iron",
+      "recipe2": "fisecraft:airplane_block"
     }
   ]
 }

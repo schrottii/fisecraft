@@ -1,0 +1,42 @@
+{
+  "name": "Vanilla Recipes",
+  "icon": "minecraft:crafting_table",
+  "category": "fisecraft:misc_category",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:black_dye",
+      "recipe2": "fisecraft:white_dye"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:orange_dye",
+      "recipe2": "fisecraft:green_dye"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:glowstone_dust",
+      "recipe2": "fisecraft:gunpowder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:end_stone",
+      "recipe2": "fisecraft:ender_pearl"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:kelp",
+      "recipe2": "fisecraft:paper"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:ladder",
+      "recipe2": "fisecraft:rootstuff/cobweb"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/brown_dye",
+      "recipe2": "fisecraft:gapple"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Escapelevator",
+  "icon": "fisecraft:escapelevator",
+  "category": "fisecraft:mobility_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Escapelevator teleports you to the sky and negates following fall damage. This lets you quickly end a mining trip, escape from something, or get into the right position for a good Elytra flight, saving some fireworks."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:escapelevator"
+    }
+  ]
+}

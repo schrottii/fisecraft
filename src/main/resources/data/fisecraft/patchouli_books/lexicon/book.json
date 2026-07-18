@@ -1,5 +1,6 @@
 {
   "name": "Fisecraft Lexicon",
   "landing_text": "LANDING TEXT",
-  "version": 1
+  "version": 1,
+  "creative_tab": "fisecraft"
 }

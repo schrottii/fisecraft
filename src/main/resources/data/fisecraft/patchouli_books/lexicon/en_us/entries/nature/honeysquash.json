@@ -1,0 +1,15 @@
+{
+  "name": "Honeysquash",
+  "icon": "fisecraft:honeysquash",
+  "category": "fisecraft:nature_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Eating this will heal you a bit and make you faster for a short time. And honestly, it only exists because I wanted to use the word squash in some form."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:honeysquash"
+    }
+  ]
+}

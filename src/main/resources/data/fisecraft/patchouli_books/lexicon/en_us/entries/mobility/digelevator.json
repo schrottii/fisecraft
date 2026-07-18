@@ -1,0 +1,15 @@
+{
+  "name": "Digelevator",
+  "icon": "fisecraft:digelevator",
+  "category": "fisecraft:mobility_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Digelevator teleports you into the underground (below your current position). Perfect for quickly starting a mining trip, or even for a secret underground base! You may take damage, so break the blocks quickly."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:digelevator"
+    }
+  ]
+}

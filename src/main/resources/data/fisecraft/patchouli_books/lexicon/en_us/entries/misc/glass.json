@@ -1,0 +1,24 @@
+{
+  "name": "Glass",
+  "icon": "minecraft:glass",
+  "category": "fisecraft:misc_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Destroying glass usually gives you nothing, but now, it gives you glass shards."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "fisecraft:glass_shard"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:glass",
+      "recipe2": "fisecraft:glassy_sand"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:hourglass_idol"
+    }
+  ]
+}
