@@ -177,6 +177,9 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.ZERULL, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeTab.fisecraft)));
 
+    //public static final RegistryObject<Item> LEXICON = ITEMS.register("lexicon",
+    //        () -> new Item(new Item.Properties().tab(ModCreativeTab.fisecraft)));
+
     @SubscribeEvent
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());

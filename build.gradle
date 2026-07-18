@@ -147,6 +147,7 @@ repositories {
     // }
 
     maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+    maven { url 'https://maven.blamejared.com' }
 }
 
 dependencies {
@@ -168,6 +169,9 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.18:3.0.57')
+
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.1:api")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.1")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
