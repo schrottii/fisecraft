@@ -226,6 +226,8 @@
 - Misc.: Glass, Roots, Structures, Vanilla Recipes, Zerull
 - Mobility: Airplane Block, Digelevator, Ender Fruit, Escapelevator, Hourglass Idol
 - Nature: Aloee Vera, Avyrya, Honey Squash, Kremelo, Light Flower, Shadow Flower
+- 1 new item (48 total)
+- 1 new recipe (101 total)
 
 -> Rootguardian:
 - Added boss music that plays during the fight!
