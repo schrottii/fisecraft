@@ -1,0 +1,29 @@
+{
+  "name": "Dire Blocks",
+  "icon": "fisecraft:pain_block",
+  "category": "fisecraft:dire_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Pain & Hate block deal damage when stepping on them. The painless variants are purely decorative and do not deal damage (or hate anyone)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:pain_block",
+      "recipe2": "fisecraft:pain_block2"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe2": "fisecraft:hate_block"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe2": "fisecraft:hate_block2"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:pain_block_painless",
+      "recipe2": "fisecraft:hate_block_hateless"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Lightflower",
+  "icon": "fisecraft:lightflower",
+  "category": "fisecraft:nature_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Generates in cold places"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:white_dye",
+      "recipe2": "fisecraft:glowstone_dust"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:lightflower_lamp",
+      "recipe2": "fisecraft:escapelevator"
+    }
+  ]
+}

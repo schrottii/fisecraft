@@ -1,0 +1,28 @@
+{
+  "name": "Avyrya",
+  "icon": "fisecraft:avyrya_seeds",
+  "category": "fisecraft:nature_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This seed can be artificially crafted and then planted for a simple source of nutrition."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:kremelo/avyrya_seeds"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:kremelo/avyrya_soup",
+      "recipe2": "fisecraft:kremelo/avyrya_nugget"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:kremelo/avyrya_block"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fisecraft:kremelo/avyrya_block_smooth"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Dire Shard",
+  "icon": "fisecraft:dire_shard",
+  "category": "fisecraft:dire_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Dropped from Dire Knights in the Nether, they are the base for the items of this category."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "fisecraft:dire_shard"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Direrer",
+  "icon": "fisecraft:direrer",
+  "category": "fisecraft:dire_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Used to quickly mine dire blocks"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:direrer"
+    }
+  ]
+}

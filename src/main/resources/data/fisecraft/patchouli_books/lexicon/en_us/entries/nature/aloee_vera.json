@@ -1,0 +1,25 @@
+{
+  "name": "Aloee",
+  "icon": "fisecraft:aloee",
+  "category": "fisecraft:nature_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Found in the wild, can be used for healing and crafting."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:aloee_vera",
+      "recipe2": "fisecraft:aloee_block"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:bandage",
+      "recipe2": "fisecraft:green_dye"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fisecraft:kelp"
+    }
+  ]
+}

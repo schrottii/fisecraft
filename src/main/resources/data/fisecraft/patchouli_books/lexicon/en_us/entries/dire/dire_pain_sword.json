@@ -1,0 +1,15 @@
+{
+  "name": "Dire Pain Sword",
+  "icon": "fisecraft:dire_pain_sword",
+  "category": "fisecraft:dire_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Deals high damage and wither effect"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:dire_pain_sword"
+    }
+  ]
+}

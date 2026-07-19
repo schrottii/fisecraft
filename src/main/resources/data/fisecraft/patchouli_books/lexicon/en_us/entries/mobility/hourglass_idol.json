@@ -1,0 +1,15 @@
+{
+  "name": "Hourglass Idol",
+  "icon": "fisecraft:hourglass_idol",
+  "category": "fisecraft:mobility_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Dropped by the Rootguardian boss, this item with infinite uses lets you levitate in the air for a short moment, making it possible to fly over ravines or climb up a few blocks."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "fisecraft:hourglass_idol"
+    }
+  ]
+}

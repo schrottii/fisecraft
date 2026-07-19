@@ -1,0 +1,24 @@
+{
+  "name": "Endeye",
+  "icon": "fisecraft:endfise",
+  "category": "fisecraft:creatures_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Watching flight. Spawns in the End. 200 HP, 4 damage, can fly. Drops Endfise"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "fisecraft:endeye"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "fisecraft:endfise"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:end_stone",
+      "recipe2": "fisecraft:ender_pearl"
+    }
+  ]
+}

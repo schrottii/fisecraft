@@ -25,8 +25,11 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "fisecraft:kelp",
-      "recipe2": "fisecraft:paper"
+      "recipe": "fisecraft:paper"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fisecraft:kelp"
     },
     {
       "type": "patchouli:crafting",

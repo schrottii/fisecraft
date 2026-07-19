@@ -1,0 +1,41 @@
+{
+  "name": "Zerull",
+  "icon": "fisecraft:zerull_ingot",
+  "category": "fisecraft:misc_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Zerull is a new type of ore that only spawns rarely near Y=0, giving you a reason to go to that layer. It is slightly stronger than Diamond."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "fisecraft:zerull_ore",
+      "item2": "fisecraft:zerull_ingot"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:zerull/zerull_sword",
+      "recipe2": "fisecraft:zerull/zerull_axe"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:zerull/zerull_pickaxe",
+      "recipe2": "fisecraft:zerull/zerull_shovel"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:zerull/zerull_hoe",
+      "recipe2": "fisecraft:zerull/block_of_zerull"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:zerull/zerull_helmet",
+      "recipe2": "fisecraft:zerull/zerull_chestplate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:zerull/zerull_leggings",
+      "recipe2": "fisecraft:zerull/zerull_boots"
+    }
+  ]
+}

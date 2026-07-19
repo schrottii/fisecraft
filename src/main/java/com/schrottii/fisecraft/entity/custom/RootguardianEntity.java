@@ -1,14 +1,13 @@
 package com.schrottii.fisecraft.entity.custom;
 
+import net.minecraftforge.event.entity.living.LivingSpawnEvent;
 import com.schrottii.fisecraft.entity.RootguardianMusic;
-import com.schrottii.fisecraft.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -31,6 +30,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -47,6 +47,7 @@ public class RootguardianEntity extends Monster implements IAnimatable {
 
     private int specialCooldown = 0;
     private final Random random = new Random();
+    private boolean startedBossMusic = false;
 
     public RootguardianEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
@@ -56,9 +57,6 @@ public class RootguardianEntity extends Monster implements IAnimatable {
                 BossEvent.BossBarOverlay.PROGRESS
         );
         this.bossEvent.setVisible(true);
-
-        RootguardianMusic sound = new RootguardianMusic(this);
-        Minecraft.getInstance().getSoundManager().play(sound);
     }
 
     public static AttributeSupplier setAttributes() {
@@ -140,6 +138,30 @@ public class RootguardianEntity extends Monster implements IAnimatable {
     }
 
     @Override
+    public void tick() {
+        super.tick();
+
+        // start boss music, but not if it's a mob spawner or patchouli
+        if (this.level.isClientSide()) {
+            if (!this.startedBossMusic && this.isAlive() && this.getId() > 0) {
+                if (!isLookingAtPatchouliBook()) {
+                    RootguardianMusic sound = new RootguardianMusic(this);
+                    Minecraft.getInstance().getSoundManager().play(sound);
+                    this.startedBossMusic = true;
+                }
+            }
+        }
+    }
+
+    private boolean isLookingAtPatchouliBook() {
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.screen != null) {
+            return mc.screen.getClass().getName().contains("vazkii.patchouli");
+        }
+        return false;
+    }
+
+    @Override
     public void startSeenByPlayer(ServerPlayer player) {
         super.startSeenByPlayer(player);
         this.bossEvent.addPlayer(player);
@@ -181,5 +203,4 @@ public class RootguardianEntity extends Monster implements IAnimatable {
     protected float getSoundVolume() {
         return 0.4F;
     }
-
 }

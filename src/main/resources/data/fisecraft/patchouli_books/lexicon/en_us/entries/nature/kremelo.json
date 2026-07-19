@@ -1,0 +1,28 @@
+{
+  "name": "Kremelo",
+  "icon": "fisecraft:kremelo_seeds",
+  "category": "fisecraft:nature_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This seed can be artificially crafted and then planted for a simple source of nutrition."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:kremelo/kremelo_seeds"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:kremelo/kremelo_soup",
+      "recipe2": "fisecraft:kremelo/kremelo_sticks"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:kremelo/kremelo_block"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fisecraft:kremelo/kremelo_block_smooth"
+    }
+  ]
+}

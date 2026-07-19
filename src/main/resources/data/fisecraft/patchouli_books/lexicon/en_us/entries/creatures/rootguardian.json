@@ -1,0 +1,28 @@
+{
+  "name": "Rootguardian",
+  "icon": "fisecraft:hourglass_idol",
+  "category": "fisecraft:creatures_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Boss of roots. Summoned with an Hourglass Idol, or rarely when murdering his children (1% chance normally). 226 HP, 9 damage. It even has its own boss music now! This boss has two special moves: the Special Sand Attack, dropping sand on your head (dealing more damage than usual!) & slowing you down. Lightning Attack: Summons Lightning, dealing 5 damage, burns, and slows you down. That means it is somewhat destructive. Not very much, but if you really care, avoid spawning it near your buildings. A random desert sounds like a good idea."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "fisecraft:rootguardian"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "fisecraft:hourglass_idol"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:hourglass_idol"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "fisecraft:funny_hourglass",
+      "item2": "fisecraft:rootguardian_trophy"
+    }
+  ]
+}

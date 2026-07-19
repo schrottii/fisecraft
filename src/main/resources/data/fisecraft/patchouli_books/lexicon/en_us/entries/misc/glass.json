@@ -14,11 +14,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "fisecraft:glass",
-      "recipe2": "fisecraft:glassy_sand"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "fisecraft:hourglass_idol"
+      "recipe2": "fisecraft:hourglass_idol"
     }
   ]
 }

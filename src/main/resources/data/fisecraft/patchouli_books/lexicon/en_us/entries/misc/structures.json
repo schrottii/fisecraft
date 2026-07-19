@@ -1,0 +1,15 @@
+{
+  "name": "Structures",
+  "icon": "fisecraft:block_of_roots",
+  "category": "fisecraft:misc_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The mod adds two structures. Flying Beam: Spawns in the End, little flying beam that can contain an iron block or diamond block. Endeye spawn here"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Hourglass: Spawns in dry places, built of root blocks, sand and glass. Home of the Rootglass"
+    }
+  ]
+}

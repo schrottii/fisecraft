@@ -1,0 +1,70 @@
+{
+  "name": "Roots",
+  "icon": "fisecraft:root",
+  "category": "fisecraft:misc_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Roots can be found hanging from the ceiling in the underground. They are used for many things, and are a core aspect of the mod. There is a full set of tools, armor, and building blocks. The building blocks (stairs, trapdoor, etc.) also all exist in the smooth variant. (Only one page for now, sorry!)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "fisecraft:root"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/rough_block_of_roots",
+      "recipe2": "fisecraft:rootstuff/shiny_block_of_roots"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/brown_dye",
+      "recipe2": "fisecraft:rootstuff/rooted_dirt"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/cobweb",
+      "recipe2": "fisecraft:rootstuff/root_barrel"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/block_of_roots",
+      "recipe2": "fisecraft:rootstuff/chiseled_block_of_roots"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/root_slab",
+      "recipe2": "fisecraft:rootstuff/root_stairs"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/root_trapdoor",
+      "recipe2": "fisecraft:rootstuff/root_wall"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/root_door",
+      "recipe2": "fisecraft:rootstuff/root_hoe"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/root_sword",
+      "recipe2": "fisecraft:rootstuff/root_axe"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/root_pickaxe",
+      "recipe2": "fisecraft:rootstuff/root_shovel"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/root_helmet",
+      "recipe2": "fisecraft:rootstuff/root_chestplate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:rootstuff/root_leggings",
+      "recipe2": "fisecraft:rootstuff/root_boots"
+    }
+  ]
+}

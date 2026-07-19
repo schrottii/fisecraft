@@ -212,14 +212,32 @@
 
 
 
-## v1.4 - ?que?
-2026-
+## v1.4 - Patchouli Update
+2026-07-20
+
+-> Patchouli:
+- Added Patchouli integration, the Fisecraft lexicon!
+- This way, you can read about everything ingame (and there is no wiki yet, so...)
+- It is mostly complete but short, and will be expanded in the future
+- Categories: Creatures, Dire, Misc., Mobility, Nature
+- Pages in each category:
+- Creatures: Dire Knight, Endeye, Rootglass, Rootguardian
+- Dire: Dire Blocks, Dire Pain Sword, Dire Shard, Direrer
+- Misc.: Glass, Roots, Structures, Vanilla Recipes, Zerull
+- Mobility: Airplane Block, Digelevator, Ender Fruit, Escapelevator, Hourglass Idol
+- Nature: Aloee Vera, Avyrya, Honey Squash, Kremelo, Light Flower, Shadow Flower
 
 -> Rootguardian:
 - Added boss music that plays during the fight!
 - Song name: The Guard of Time (unreleased so far)
 - Fixed Special Sand Attack issue
 
+-> WorldGen:
+- Zerull Ore is now slightly less common and spawns two Y higher on average (= roughly equal stone/deepslate quantities)
+- Adjusted spawn values for Roots and Block of Roots
+- Fixed issue with Block of Roots not properly generating at Y=-50 to -25
+
 -> Other:
 - Updated mod logo from the old logo to a low-res version of the new one
+- Updated authors from Made by Schrottii to Schrottii / Balnoom
 - Changed changelog.txt to PATCH_NOTES.md

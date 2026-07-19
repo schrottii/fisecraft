@@ -1,0 +1,19 @@
+{
+  "name": "Dire Knight",
+  "icon": "fisecraft:dire_shard",
+  "category": "fisecraft:creatures_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Brutal killer. Spawns in the Nether, rarely, mini boss. 60 HP, 8 damage."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "fisecraft:direknight"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "fisecraft:dire_shard"
+    }
+  ]
+}

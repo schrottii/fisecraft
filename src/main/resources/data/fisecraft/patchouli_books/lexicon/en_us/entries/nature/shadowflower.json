@@ -1,0 +1,21 @@
+{
+  "name": "Shadowflower",
+  "icon": "fisecraft:shadowflower",
+  "category": "fisecraft:nature_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Generates in spooky places"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:black_dye",
+      "recipe2": "fisecraft:gunpowder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fisecraft:shadowflower_lamp",
+      "recipe2": "fisecraft:digelevator"
+    }
+  ]
+}

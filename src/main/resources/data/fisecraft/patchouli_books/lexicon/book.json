@@ -1,6 +1,7 @@
 {
   "name": "Fisecraft Lexicon",
-  "landing_text": "LANDING TEXT",
+  "landing_text": "This book aims to list and explain the contents and mechanics of Fisecraft. It will be expanded in the future, as some things are not explained with enough detail.",
   "version": 1,
-  "creative_tab": "fisecraft"
+  "creative_tab": "fisecraft",
+  "model": "fisecraft:lexicon"
 }

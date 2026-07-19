@@ -1,0 +1,19 @@
+{
+  "name": "Rootglass",
+  "icon": "fisecraft:root",
+  "category": "fisecraft:creatures_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Emotionless creature. Spawns in dry places, low health, can be tamed with Roots, can be bred with Clocks, can be killed for Roots and Sand/Glass. 4.50 HP, 2 damage."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "fisecraft:rootglass"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "fisecraft:root"
+    }
+  ]
+}
